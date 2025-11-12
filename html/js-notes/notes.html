@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Notes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+    pre, code {
+      
+      padding: 10px;
+      border-radius: 8px;
+      display: block;
+      white-space: pre-wrap;
+    }
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #555;
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Notes</h1>
+
+  <!-- 1. fetch() Example -->
+  <h2>1. fetch()</h2>
+  <p><strong>Definition:</strong> <code>fetch()</code> is used to get (or send) data from a server (like an API or file). It returns a Promise, so we can handle it using <code>.then()</code> or <code>async/await</code>.</p>
+  <h4>Example: Fetch a text file</h4>
+  <pre id="data">Loading data.txt content...</pre>
+  
+    fetch('data.txt')
+      .then(response => response.text())
+      .then(content => {
+        document.getElementById('data').innerText = content;
+      })
+      .catch(error => {
+        document.getElementById('data').innerText = "Error loading file!";
+      });
+  
+
+  <hr>
+
+  <!-- 2. HTML Table Example -->
+  <h2>2. HTML Table</h2>
+  <p><strong>Definition:</strong> A table in HTML is used to display data in rows and columns using <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code>.</p>
+  <h4>Example:</h4>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Mani</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Sabarish</td>
+      <td>23</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- 3. map() Example -->
+  <h2>3. map()</h2>
+  <p><strong>Definition:</strong> <code>map()</code> creates a new array by applying a function to each element of the original array.</p>
+  <pre id="mapExample"></pre>
+  <script>
+    let numbers = [1, 2, 3, 4];
+    let doubled = numbers.map(num => num * 2);
+    document.getElementById("mapExample").innerText = "Original: " + numbers + "\nDoubled: " + doubled;
+  </script>
+
+  <hr>
+
+  <!-- 4. filter() Example -->
+  <h2>4. filter()</h2>
+  <p><strong>Definition:</strong> <code>filter()</code> creates a new array with elements that pass a condition (true/false test).</p>
+  <pre id="filterExample"></pre>
+  <script>
+    let ages = [18, 22, 16, 25];
+    let adults = ages.filter(age => age >= 18);
+    document.getElementById("filterExample").innerText = "All ages: " + ages + "\nAdults (18+): " + adults;
+  </script>
+
+  <hr>
+
+  <!-- 5. reduce() Example -->
+  <h2>5. reduce()</h2>
+  <p><strong>Definition:</strong> <code>reduce()</code> combines all elements in an array into a single value (like sum, total, etc).</p>
+  <pre id="reduceExample"></pre>
+  <script>
+    let nums = [10, 20, 30];
+    let total = nums.reduce((sum, current) => sum + current, 0);
+    document.getElementById("reduceExample").innerText = "Numbers: " + nums + "\nTotal (sum): " + total;
+  </script>
+
+  <hr>
+
+  <!-- 6. DOM Example -->
+  <h2>6. DOM (Document Object Model)</h2>
+  <p><strong>Definition:</strong> DOM represents the HTML structure as objects that JavaScript can access and modify (change text, style, elements, etc).</p>
+  <h3 id="heading">Hello</h3>
+  <button onclick="changeText()">Click Me</button>
+  <script>
+    function changeText() {
+      let h = document.getElementById("heading");
+      h.innerText = "Hello Mani!";
+      h.style.color = "blue";
+    }
+  </script>
+
+</body>
+</html>

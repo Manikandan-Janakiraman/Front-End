@@ -1,0 +1,102 @@
+HTML Advanced Basic Topics:
+ 
+SEO - product, service , --> meta tags 
+
+keyword - best institute 
+
+website: Keuyword, itle, description
+
+
+ Doc Type:
+ 1. First Line of HTML 
+ 2. Version of the html 
+ 3. without doctype browser will go to quirks mode old rendering style
+ 4. Disturb layout Structured
+ 5. Consistent Rendering 
+
+Meta Tags:
+1. data abou data 
+2. Provide information about the website or webpage
+3. Its not shown in your website
+4. Responsiveness (Adaptability)
+5. Self Closing Tag 
+
+Charset
+1. UTF - Unicode Transformation Format - Machine UTF -8 
+2. Character encoding standards a, b, c  - 1 byte, 123 -2 emoji symbol -3 or 4 byte 
+ 3. Encodes letters, numbers symbols, emoji 
+4. text is stored and display in webpage 
+
+ASCII:
+1. ASCII - American standard Code information Interchange  
+2. Support 128 bit
+3. letters, numbers, punctuation, control characters.
+
+&copy; - Copyright c symbols
+&nbsp; - Non Breaking Space
+&hearts; - symbol 
+&arrow; - symbols 
+
+characters - 1 bytes
+Numbers - 2 bytes
+Emoji - 4 bytes
+
+
+Meta:
+1. Viewport - Responsiveness (Visible Size) mobile, tablet 
+2. content - Responsiveness (devie width)  desktop 100%, mobile 30%, tablet 50%
+3. Initial scale - Responsiveness  
+4. Description - 150 to 160(for desktop) 
+5. Title - 50 to 60 
+6. Keywords - Broad Match Keywords 
+7. Author - name of the author 
+8. og - open graph
+
+
+
+Difference Between HTML & HTML5
+
+HTML
+doctype - long and complex doctype information <!DOCTYPE html - w3/includes/>
+          long description  
+          audio and video - plugins (flash) audio video flash 
+          only div for using containers 
+          cookie storage 
+          Limited Mobile support 
+
+HTML 5
+doctype - short information  <!DOCTYPE html>
+          short description
+          Audio Video (Media tag) 
+          Semantic Tag (Header, footer, aside, article, nav, main) 
+          local storage, section staorage 
+          canvas and SVG 
+          Mobile support 
+
+
+Iframe Tag :
+<iframe></iframe>
+
+Media Tag - Audio & Video:
+Media tags are used to embedded multi media content inside the webpage. They Remove the media plugins.
+
+Audio Tag:
+        <audio src> </audio>
+        <audio controls>
+        <source src="" type="audio/mp3">
+        Your Browser Does not it support the audio tag 
+        </audio>
+
+Video Tag:
+        <video src> </audio>
+        <video controls>
+        <video src="" type="audio/mp3">
+        Your Browser Does not it support the audio tag 
+        </video>
+
+
+
+
+Full Webpage using HTML 5
+
+

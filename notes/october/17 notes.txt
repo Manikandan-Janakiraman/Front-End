@@ -1,0 +1,101 @@
+Array
+
+
+var apps={messanger:["Whatsapp","fb","arattai"],Food:["swiggy","zomato"],Travel:["makemytrip","ixigo"]}
+console.log(apps.Food[0][1])
+
+Specific character 
+Output:
+apps.Food[0][0] - s 
+apps.Food[0][1] - w 
+apps.Food[0][2] - i 
+apps.Food[0][3] - g 
+apps.Food[0][4] - g 
+apps.Food[0][5] - y 
+
+apps.Food[1][0] - z 
+apps.Food[1][1] - o 
+apps.Food[1][2] - m 
+apps.Food[1][3] - a 
+apps.Food[1][4] - t 
+apps.Food[1][5] - o 
+
+apps.Food[0] - swiggy 
+apps.Food[1] - zomato 
+
+Task:
+
+Single Html Page 
+Dream Planet - Imagination world 
+    Map 
+    Infrastruture
+    Place 
+    foods 
+    transports 
+    people 
+    gadgets 
+
+
+
+<section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>The Dream of BUCK MOON</h2>
+                    <figure class="text">
+                        <blockquote class="blockquote">
+                            <p> BUCK MOON is not just a place — it’s a dream of human evolution, a testament to what
+                                life
+                                can
+                                become
+                                when wisdom, innovation, and unity guide existence.</p>
+                        </blockquote>
+                    </figure>
+
+                    <p>
+                    </p>
+
+                    <p>
+                    <ul>
+                        <li> Welcome to BUCK MOON, a visionary planet beyond Earth where technology and survival exist
+                            in
+                            perfect
+                            balance. This is a world reborn through innovation — where every breath is powered by
+                            oxygen,
+                            every
+                            journey is driven by energy, and every life is sustained by science.
+                        </li>
+                        <li> On BUCK MOON, people live above the clouds in cities that float across the skies. Each
+                            citizen
+                            wears
+                            an oxygen mask or cylinder, refilled weekly to sustain life in this rarefied atmosphere.
+                            Roads
+                            are
+                            suspended in air, air-bikes and hover-cars dominate the skyline, and robots serve as
+                            healers,
+                            engineers, and guardians of the planet.
+                        </li>
+                        <li> The planet is divided into multiple cities, each ruled by a local government or king,
+                            ensuring
+                            order
+                            and growth through distinct sectors — Education, Technology & Research, Family & Food,
+                            Hospital
+                            &
+                            Law, Forest & Infrastructure. Together, these pillars uphold the harmony of BUCK MOON.</li>
+
+                        <li> Forests are sacred and forbidden — untouched by human hands. Food is purely protein-based,
+                            designed
+                            for endurance and intellect. The economy thrives on technological products that help
+                            citizens
+                            survive, evolve, and reach new destinations.</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="img/3.png" alt="" width="100%" style="border:2px solid white; border-radius: 25px;">
+                </div>
+            </div>
+    </section>
+
+
+

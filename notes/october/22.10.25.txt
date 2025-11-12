@@ -1,0 +1,106 @@
+22.10.25
+
+Every array in javascript is created using the array prototype
+The array.prototype to give access to built in method
+
+Built in:
+Already write a function that perform specific task based on arguments
+
+push() - First In First Out     
+Pop() - LIFO last in first out 
+shift() - Delete element in the beginning of the array 
+unshift() - Add element to the beginning of the array 
+Concat() - combine 2 or more arrays
+Slice() - Copy the portion of an array 
+splice () -  Splice Add or Remove the elements in an array
+index() - identify the given data index value or address 
+includes() - Values exist in the array (true or false condition)
+
+Higher Order Array Methods:
+-> Execute the function for each element
+-> Function within the function
+-> Return function Not applicable
+
+Syntax:
+array.forEach((currentvalue, index, array)=>{
+    console.log(currentvalue, index)
+});
+
+Example:
+const jv = [10,20,30,40]
+jv.forEach((currentvalue, index, array)=>{
+    console.log(currentvalue, index)
+});
+
+
+Map (Important Topics):
+-> Create a new array by applying a function
+-> In map return is applicable
+
+Syntax:
+arr.map(currentvalue or element)=>{          // callback function 
+}
+
+Example:
+const arrs = [20,40,60]
+arr.map((a,i,values)=>{          // callback function 
+console.log(a,i);
+});
+
+
+
+
+
+at: ƒ at() 
+concat: ƒ concat()
+constructor : ƒ Array()
+copyWithin: ƒ copyWithin()
+entries: ƒ entries()
+every : ƒ every()
+fill: ƒ fill()
+filter:ƒ filter()
+find: ƒ find()
+findIndex: ƒ findIndex()
+findLast: ƒ findLast()
+findLastIndex: ƒ findLastIndex()
+flat: ƒ flat()
+flatMap: ƒ flatMap()
+forEach: ƒ forEach()
+includes: ƒ includes()
+indexOf: ƒ indexOf()
+join: ƒ join()
+keys: ƒ keys()
+lastIndexOf: ƒ lastIndexOf()
+length: 0
+map: ƒ map()
+pop: ƒ pop()
+push: ƒ push()
+reduce: ƒ reduce()
+reduceRight: ƒ reduceRight()
+reverse: ƒ reverse()
+shift: ƒ shift()
+slice: ƒ slice()
+some: ƒ some()
+sort: ƒ sort()
+splice: ƒ splice()
+toLocaleString: ƒ toLocaleString()
+toReversed: ƒ toReversed()
+toSorted: ƒ toSorted()
+toSpliced: ƒ toSpliced()
+toString: ƒ toString()
+unshift: ƒ unshift()
+values: ƒ values()
+with: ƒ with()
+Symbol(Symbol.iterator): ƒ values()
+Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}
+
+[[Prototype]]: Object
+
+Task:
+Deep Copy (Will check the details)
+Shallow Copy
+
+
+Task:
+Higher Order Array Method for if only - 12 times
+Map - 18 times same syntax 

@@ -1,0 +1,85 @@
+Bootstrap 5:
+
+Components:
+
+-> Carousel
+-> Collapse
+-> Button
+-> breadcrumb
+-> cards 
+-> modal
+-> navbar 
+-> toaster message (Notification)
+-> sweet alert
+-> alert 
+-> tooltip
+-> background
+-> border
+-> border-radius
+-> colors
+-> flex
+-> position (z-index, layer, boxshadow)
+-> sizing
+-> spacing 
+-> Text - text break, text-transform, fs-1 to 6 (font-size)
+-> Extendable - FontAwesome Icons 
+-> Form Controls 
+
+
+
+
+<script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Shortcut:
+Arrow function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Task 
+React:
+Variables Behaviour
+Object
+Nested Object 
+Array
+Array of Object
+Dot Notation (Symbol)
+3 types of  function name function, anoymous, arrow
+array function - pop, push
+call back function
+closure 
+File Handling

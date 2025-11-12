@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PixFinder</title>
+    <style>
+        body {
+            background: rgb(211, 216, 173);
+        }
+
+        .searchbox {
+            text-align: center;
+            margin-top: 125px;
+        }
+
+        .searchbox h2 {
+            font-size: 60px;
+            font-family: "Anton", sans-serif;
+            color: red;
+            animation-name: myAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes myAnimation {
+            0% {
+                color: #1A0000;
+            }
+
+            25% {
+                color: #750000;
+            }
+
+            50% {
+                color: #FF0000;
+            }
+
+            100% {
+                color: #FF5C5C;
+            }
+        }
+
+        .searchbox input {
+            width: 600px;
+            height: 35px;
+            border-radius: 50px;
+            font-size: 18px;
+            padding: 5px;
+            border: none;
+        }
+
+        .searchbox button {
+            width: 150px;
+            height: 35px;
+            border-radius: 8px;
+            font-size: 18px;
+            padding: 5px;
+            border: none;
+            border-radius: 30px;
+            background-color: brown;
+            color: white;
+            cursor: pointer;
+        }
+
+        .searchbox button:hover {
+            background-color: darkred;
+        }
+
+        p {
+            font-size: 20px;
+            color: black;
+            font-family: "Anton", sans-serif;
+        }
+
+        #result img {
+            width: 15%;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+
+        footer {
+            font-family: "Anton", sans-serif;
+            color: rgb(54, 54, 54);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="searchbox">
+        <h2>PixFinder</h2>
+        <p>Image Search</p>
+
+        <input type="text" id="searchInput" placeholder="Enter image name (e.g., ajith, vijay)">
+        <br><br><br>
+        <button id="searchBtn">Search</button>
+
+        <div id="result"></div>
+    </div>
+
+
+    <footer>
+        <hr>
+        Copyrights © 2025 PixFinder
+    </footer>
+
+
+    <script>
+        let images = {
+            ajith: "img/ajith.jpg",
+            vijay: "img/viay.webp",
+            suriya: "img/suriya.jpg",
+        };
+
+        document.getElementById("searchBtn").addEventListener("click", function () {
+            let searchText = document.getElementById("searchInput").value.toLowerCase();
+            let resultDiv = document.getElementById("result");
+
+            if (images[searchText]) {
+                resultDiv.innerHTML = `<img src="${images[searchText]}" alt="${searchText}">`;
+            } else {
+                resultDiv.innerHTML = `<p style="color:red;">Image Not Found</p>`;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

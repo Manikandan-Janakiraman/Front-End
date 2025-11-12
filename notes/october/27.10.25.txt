@@ -1,0 +1,140 @@
+ES6:
+-> ES6 + features
+-> Before es6 javascript use long syntax, do not organise.
+-> After ES6 modern syntax and features.
+-> let, const, arrow functions, template literals, classes, modules, ternary operators 
+   promises, destructuring.
+
+Task 1:
+ES5 and ES6 Difference
+Recent Features and updates in javascript
+
+Block Scope:
+Funcion Scope:
+Lexical Scope:
+Global Scope:
+Hoisting:
+
+    Block scope: Statement can be process in this scope.
+    let and const block scope 
+    Why because it run only inside the if, for while block outer block not working.
+
+
+
+    var a = 10;
+    if(a){
+        console.log('This is globe',a);  // this will print 
+    }
+    console.log('This is globe',a); // not print 
+
+     
+    
+    Function Scope:
+    let const access outside the block
+    var do not run the outside block 
+    Inside the function only run while we using var 
+
+
+    var a = 10;
+        if(a){
+            console.log('This is globe',a);
+
+            const add = ()=>{
+
+            }
+        }
+    
+
+    Global Scope: 
+    let(declare, reassign), const(initialization), var(redeclare, reassign, declare)
+    
+    Example: 
+    var a = "director";
+    let b = "actor";
+    const c = "actress";
+
+    if(a==="director come"){
+        console.log('Yes, I am coming');
+        console.log(a);
+    }
+
+    Function scope: 
+    var 
+
+
+Hoisting Method:
+
+Hoisting is when you initialize the value but you tried to access the value before the
+initialization the execution time the javascript try to access the value but hoisting
+method is your declaration part will move to the top of the scope.
+
+var tea;
+console.log(tea);
+var tea = 10Rs;
+
+temporal dead zone:
+let tea;
+console.log(tea);
+let tea = 10Rs;
+
+Referral Error: (let or const)
+const tea;
+console.log(tea);
+const tea = 10Rs;
+
+Function Declaration:
+add()
+function add(){
+    console.log("Running");
+}
+
+Top 4 things in DOM: (Important:Interview question)
+Data manipulation:
+Retrieve the datas:
+Validation:
+Show to the screen:
+
+
+
+
+
+
+
+
+
+DOM document object modules
+1. make it as tree structure 
+2. Read and modify Delete the function 
+3. Simple Representation of object model 
+
+Selector:
+getelementbyID
+getelementbyclass
+tag 
+
+Property:
+innerHTML()
+innerText()
+style()
+value()
+classlist()
+set attribute()
+remove()
+appendChild()
+createElement()
+
+Eventlistener - click submit input 
+onclick - 
+onsubmit
+inline - onsubmit, 
+event 
+
+onmousedown
+onmoseup 
+mouseout
+mouseup 
+submit change output 
+
+Task: 
+Button onclick Hide & Show 
+Available products 

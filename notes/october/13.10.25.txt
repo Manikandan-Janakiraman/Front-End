@@ -1,0 +1,177 @@
+Javascript:
+    -> High level programming language 
+    -> Interpretator language (Code executed line by line)
+    -> Dynamically typed language 
+    -> It Runs inside the browser Engine called v8 Engine
+    -> Firefox (Spider Monkey)
+    -> JavaScriptCore: Used by Safari
+    -> Chakra - Internet Explorer 
+    -> High level engine - v8 Engine (Google)
+    -> Single threaded process 
+    -> Uses Heap + stack memory     (Important)
+
+Types of JS:   (20% Interview Question)
+    -> Math 
+    -> Function Process 
+    -> Logical things and code performance and understand your js.
+
+JS Question:20%
+DOM: (50%)
+Project Experience - 70%
+Communication - 20%
+Handle Files in Git, Personal Details(Documents), behaviour, General Communication, Representation - 10%
+
+Method, prototype, keyword
+
+Variables: 
+    -> Named container that holds data memory (ROm - Read only memory)
+
+Keyword:
+    Var, let, const 
+
+    Var ->  old ecmascript1 to ecmascriptst5 (ES1 to ES5)
+    Let -> ES6
+    Const -> ES6 
+
+Declaration Phase (Memory Creation Phase):
+
+    -> Variable Keyword variable name; - Memory Allocation or creation 
+
+    -> Variable name - (Not allowed - special characters, numbers Allowed - Underscore)
+                        (camel case, upper camel case, pascel case, snake case) Universal cases 
+
+                        Camel Case -> oneVariableBalance - first word letter small second letter, third letter word capital
+                        Upper pascel case -> OneVariable - first word letter capitals, second word letter capitals 
+                        Snake case -> One_variable - underscore 
+
+
+
+
+Example: 
+    var a;  -> Declaration Part 
+
+    var firstNameLetter;  
+    
+      -> camel case
+    var FirstNameLetter; -> upper pascelcase
+    var First_Name; -> snake case 
+
+
+
+
+Types of js using in web application:
+    Internal - 
+    External - 
+
+    Access Phase - To check the output from outside the browser.
+
+Printing Statement:
+Syntax:
+    console.log() - to print the output in console screen or developer screen 
+    document.write() - to print the output in screen
+    alert() - To check instant error or message 
+
+Explanation:
+    () - Function call 
+
+
+
+Execution Phase:
+    
+    Initialization Process:
+    variable keyword variable name = data 
+
+    What are all tha data we have in js?
+    
+    Primitive data types(Store the value directly):
+    Data types:
+    - string - "two 2345 this is"  double quotation "sadfds123434" words , Characters 
+    - number - 123456789012345678901234567890  More than number we add use bigint 
+    - boolean -  true or false
+    - null - no values, but in js showing the type in object 
+    - undefined - declation without data    (Important: interview question) 
+    
+    Example: 
+    var a; 
+    console.log();
+
+    - bigint - 
+    - symbol -
+    - Nan - not an number (multiply or divide any value by zero it will not be considered as a nan number.)
+
+
+    Non Primitive data types:
+
+    - Reference type - Use address pointer (Collection of data or process in single variable)
+
+    - Array
+    - Array of object
+    - object
+    - functions
+
+
+Operators:
+-> Arithmetic Operators  (+ - / * % **)
+-> Logical Oeprators 
+    && - AND Operators - When two conditions true, false means output true, false 
+    || - OR Operators - false and true means True, 
+    true-true = false, 
+    true-false = true, 
+    false-false=false 
+    !  - NOT Operators - true means false, false means true 
+
+-> Assignment Oeprators (=, +=, *=)  (+= represent as x=x+1)
+-> Increment operator (++, --)
+-> Comparison Operators
+    ==  (Less Comparison)
+    === (strict equal)
+    !=  (Not equal to)
+    >   (greater than)
+    <   (lesster than)
+    >=  (greater than equal to)
+    <=  (lesser than equal to)
+
+-> Tertiary Operators
+-> Condition Operators
+
+
+
+
+
+Task 1:
+Use Var keyword - 24 times variable   Note and Git Link 
+Use let keyword - 24 times variable 
+
+Initialization Part:
+    1. Use variable values string 24times 
+    2. Use variable values let 24times
+    3. Use variable values const 24times
+
+Printing Statement:
+    Use number (Each 12 times)
+        var 
+        let 
+        const
+
+True False:
+    Use boolean Statement:
+        Var, const, let 
+
+Null:
+    Const, var, let 
+
+
+List of Operators Examples
+
+Study:
+Operators 
+List of data types 
+
+
+
+Rules:
+1. Keywords cannot be replaced
+2. Variable name do not start with numbers
+3. No space or hypen in variable
+4. Case sensitive
+5. use meaningful names 

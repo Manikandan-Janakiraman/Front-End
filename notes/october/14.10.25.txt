@@ -1,0 +1,415 @@
+Redeclare
+Reassign
+values check using Operators
+and if conditions and else 
+and else if chine
+
+
+Redeclare: 
+var - declare, redeclare, reassign 
+let - declare, reassign cannot redeclare 
+const - cannot declare, redeclare, reassign PI = 3.14 
+
+
+var a=10;  declare  
+a=20; redeclare    
+
+a=20;    line 1000  reassign 
+
+let a=10;
+a=20;
+console.log(a);
+
+
+var a=10;
+a=20;
+
+var a = "abcd";
+a=efgh;
+console.log(a);
+
+
+
+Example:
+var a;
+console.log(a);
+var a=10;
+console.log(a);
+
+let a=10;
+console.log(a);
+
+Reassign:
+Redeclare not done, reassign will do 
+
+Example:
+let a=10;
+a=12;
+console.log(a); 
+
+
+-> Assignment Oeprators (=, +=, *=)  (+= represent as x=x+1)
+
+Value check using operators 
+
+For loop (reassign process)  if loop while loop switch case 
+const (mostly used in react)
+
+Example:
+
+let a =10;
+console.log(a+=10);
+console.log(a*=1);
+console.log(a++);
+
+// a=a+1 (a+=1)
+// a=a*1 (a*=1)
+
+// a=a+1 (a++) In increment we can't define(assign) the value.
+// a=a-1 (a--) In decrement we can't define(assign) the value.
+
+
+
+
+(a+=1)  (a++) (a--) 
+
+What is expression?
+An expression is any valid piece of code that produce a value (Evaluate)
+Expression and statement called as program.
+
+var a=10;  a=10 expression 
+var b=20;  b-=20 
+console.log(a+b);    a+b  arithmetic expression a-b a*b a/b 
+
+var a="hello";  a=hello expression 
+var b="world";  b-=world  
+console.log(ab);    concatenation a value b value Hello World  
+
+
+Arithmetic expression 
+String Expression 
+Logical Expression (True or False)
+Functional Expression 
+
+Example: 
+5+10;
+console.log(5+10);
+
+
+Interveiw Question:
+Truthy Value(Rules):
+Anything have a string ("any value") as true  "hello world"
+without zero any value is true. 
+Empty array is true []
+Empty object is true 
+Non empty string 
+Double quotation space also true (" ")
+Negative number also true value -5
+functions are true 
+true and infinite are truthy values. 5.9883457431587235
+
+Falsy Values (Rules):
+False return 
+Number zero falsy value 0 
+minus zero falsy value  -0 -9 -7 
+0n falsy value 
+empty string falsy value or single quotation ('') double quotation ("") 
+null falsy value  
+undefined    
+
+For Statements Use:
+
+typeof - to identify the datatype like string, number etc 
+Nan - (Not an Number) special numerical value in javascript that 
+      represent something isn't a valid number
+      eventhough type is nan it gives number.
+      You are getting nan error 
+      while we are using math functions not an number or cannot be converted an number
+
+Example:
+
+typeof:
+    var a=10;
+    console.log(typeof a);
+
+Nan:
+    var value ="hello world";
+    console.log(Number(value));
+
+
+
+
+If conditions
+Definition:
+The if condition is used to check whether the statement or expression is true or false.
+If it is true execute one block of code
+If it is false it throughs else if conditions.
+
+
+-> Comparison Operators
+    ==  (Less Comparison)
+    === (strict equal)
+    !=  (Not equal to)
+    >   (greater than)
+    <   (lesster than)
+    >=  (greater than equal to)
+    <=  (lesser than equal to)
+
+Syntax:
+    if(condition){
+        
+    }
+    else if {
+
+    }
+
+Example:
+
+    var a=14;
+
+    if(a==10) {
+        console.log('This is first if',a);
+    }else if (a<12){                          
+        console.log('This is second if',a);
+    }else {
+        console.log('This is final statement',a);
+    }
+
+
+
+Variable, let, constant,truthy value, falsy value, expression, 
+if loop, for loop, while loop, switch case 
+
+
+
+
+
+Three line Formula: (Important)
+
+Global Block:
+{
+    var a=10;
+    console.log(a);
+}
+
+
+if {
+
+}elseif{
+
+}
+
+
+
+
+Task 1: (if block creation 18 times)
+if(a==10 && b==20) {
+    console.log('This is first if',a,b)
+}
+if (a>20 && b<20){
+    console.log('This is first if',a,b)
+}
+if (a>=20 && b<=20){
+    console.log('This is first if',a,b)
+}
+if (a!=20 && b!=20){
+    console.log('This is first if',a,b)
+}
+if (a>b || c>d){
+    console.log('This is first if',a,b)
+}
+if (a<b || c<d){
+    console.log('This is first if',a,b)
+}
+if (a>=b || c<=d){
+    console.log('This is first if',a,b)
+}
+if (a<=b || c<=d){
+    console.log('This is first if',a,b)
+}
+if (a!=b || c!=d){
+    console.log('This is first if',a,b)
+}
+if (a==b) {
+    console.log('This is first if',a)
+}
+if (a===b) {
+    console.log('This is first if',b)
+}
+if (a==b && c==d){
+    console.log('This is first if',a,b)
+}
+if (a===b && c===d){
+    console.log('This is first if',a,b)
+}
+if (a===b || c===d){
+    console.log('This is first if',a,c)
+}
+if (a>b && c<d && d>e) {
+    console.log('This is first if',a,c,d)
+}
+if (a>b || c<d || d>e){
+    console.log('This is first if',a,c,d)
+}
+if (a>=b && c<=d && d>=e) {
+    console.log('This is first if',a,c,d)
+}
+if (a>=b || c<=d || d>=e) {
+    console.log('This is first if',a,c,d)
+}
+    
+
+
+
+
+
+
+elseif (a<=20 && b>=20){
+    console.log('This is second if',a);
+}
+elseif (a<20 && b>20){
+    console.log('This is second if',a);
+}
+elseif (a>20 && b<20){
+    console.log('This is second if',a);
+}
+elseif (a>=20 && b<=20){
+    console.log('This is second if',a);
+}
+elseif (a!=20 && b!=20){
+    console.log('This is second if',a);
+}
+elseif (a>b || c>d){
+    console.log('This is second if',a);
+}
+elseif (a<b || c<d){
+    console.log('This is second if',a);
+}
+elseif (a>=b || c<=d){
+    console.log('This is second if',a);
+}
+elseif (a<=b || c<=d){
+    console.log('This is second if',a);
+}
+elseif (a!=b || c!=d){
+    console.log('This is second if',a);
+}
+elseif (a==b) {
+    console.log('This is second if',a);
+}
+elseif (a===b) {
+    console.log('This is second if',a);
+}
+elseif (a==b && c==d){
+    console.log('This is second if',a);
+}
+elseif (a===b && c===d){
+    console.log('This is second if',a);
+}
+elseif (a===b || c===d){
+    console.log('This is second if',a);
+}
+elseif (a>b && c<d && d>e) {
+    console.log('This is second if',a);
+}
+elseif (a>b || c<d || d>e) {
+    console.log('This is second if',a);
+}
+elseif (a>=b && c<=d && d>=e) {
+    console.log('This is second if',a);
+}
+elseif (a>=b || c<=d || d>=e) {
+    console.log('This is second if',a);
+}
+
+
+else {
+console.log('This is next satement');
+}
+ 
+
+
+
+Example:
+
+<script>
+        var a = 12;
+        if (a == 10) {
+            console.log('This is first if', a);
+        } else if (a < 12) {
+            console.log('This is second if', a);
+        } else {
+            console.log('This is final statement', a);
+        }
+    </script> 
+
+    <script>
+        var a = "HelloWorld";
+        if (a == 6) {
+            console.log('This is new world', a);
+        } else if (a < 7) {
+            console.log('This is old world', a);
+        } else {
+            console.log('Exit');
+        }
+    </script>
+
+    <script>
+        var a = 24;  //AND Operators
+        var b = 10;
+        if (a == 24 && b == 5) {    // equal 
+            console.log('This is new world', a, b);
+        } else if (a <= 24 && b >= 10) {    //lesser than = greater than = 
+            console.log('This is old world', a, b);
+        } else {
+            console.log('Exit');
+        }
+    </script>
+
+    <script>
+        var a = 24; // OR Operators
+        var b = 10;
+        if (a == 5 || b == 9) {    // equal true-false = true, false-true=true, false-false=false true-true=true
+            console.log('This is new world', a, b);
+        } else if (a <= 24 || b >= 10) {    //lesser than = greater than = 
+            console.log('This is old world', a, b);
+        } else {
+            console.log('Exit');
+        }
+    </script>
+
+    <script>
+        var a = 24; // NOT Operators
+        var b = 10;
+        if (a != 24) {  // true =false
+            console.log('This is new world', a, b);
+        } else if (b != 9) {    //10!=9  false =true
+            console.log('This is old world', a, b);
+        } else {
+            console.log('Exit');
+        }
+    </script>
+
+
+    <script>
+        var a = 12;
+        if (a == 10) {
+            console.log('This is first if', a);
+        } else if (a <= 12) {
+            console.log('This is second if', a);
+        } else {
+            console.log('This is final statement', a);
+        } 
+    </script>
+
+
+    <script>
+        var a = 14;
+        if (a == 15) {                // 14==15  false
+            console.log('This is first if', a);
+        } else if (a >= 14) {                       //   14<=14
+            console.log('This is second if', a);
+        } else {
+            console.log('This is final statement', a);
+        }
+    </script>

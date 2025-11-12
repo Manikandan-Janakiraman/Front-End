@@ -1,0 +1,132 @@
+<!-- <script>
+    promise.then((result) => { })
+    promise.then((result) => { })
+    promise.then((result) => { })
+    promise.then((result) => { })
+    promise.then((result) => { })
+    promise.then((result) => { })
+    promise.then((result) => { })
+    promise.then((result) => { })
+    promise.then((result) => { })
+    promise.then((result) => { })
+    promise.then((result) => { })
+    promise.then((result) => { })
+</script>
+
+<script>
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+    Promise((resolve, reject) => { })
+</script> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            
+        }
+        .containers{
+            background-image: url("bg.png");
+            position:fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vw;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Syntax | Callback</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="containers"></div>
+
+<script>
+    // Step 1: Function to make tea (returns a Promise)
+    function bakingCake() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("Cake is ready 🍰");
+                resolve("Cake done");
+            }, 2000);
+        });
+    }
+
+    // Step 2: Function to serve tea
+    function serveBrownie() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("cake served to customer 🍵");
+                resolve("cake served successfully");
+            }, 1500);
+        });
+    }
+
+    // Step 3: Function when customer becomes happy
+    function customerHappy() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("Customer is happy 😄");
+                resolve("Customer satisfied");
+            }, 1000);
+        });
+    }
+
+    // Step 4: Promise chaining
+    bakingCake()
+        .then((msg) => {
+            console.log("Step 1 Done:", msg);
+            return serveBrownie(); // returns next promise
+        })
+        .then((msg2) => {
+            console.log("Step 2 Done:", msg2);
+            return customerHappy(); // returns next promise
+        })
+        .then((msg3) => {
+            console.log("Step 3 Done:", msg3);
+            console.log("All process done ✅");
+        })
+        .catch((err) => {
+            console.log("Error:", err);
+        });
+</script>
+
+</body>
+</html> 

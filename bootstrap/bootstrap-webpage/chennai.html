@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennai Jobs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Small style tweaks */
+        .text-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .lead-cta {
+            margin-top: .5rem;
+        }
+
+        /* Ensure carousel or image area vertically centers on larger screens */
+        .image-side {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        /* Optional: a subtle card look for the text area */
+        .text-card {
+            border-radius: .75rem;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            background: #fff;
+        }
+        /* Banner styling */
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      background: url('img/banner3.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .banner-caption {
+      position: relative;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .banner-caption h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .banner-caption p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .banner {
+        height: 40vh;
+      }
+      .banner-caption h1 {
+        font-size: 1.8rem;
+      }
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid navbar bg-warning p-3 text-white">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="color: rgb(33, 33, 33); font-weight: bold;">
+                    Echoes of Chennai’s Survival
+                </a>
+                <ul class="navbar-nav d-flex flex-row justify-content-between gap-3 fw-semibold">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jobs">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#safety">Safety</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stats">Statistics</a>
+                    </li>
+
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-dark" data-bs-toggle="modal"
+                        data-bs-target="#registerModal">Register</button>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Banner Section -->
+  <section class="banner">
+    <div class="banner-overlay"></div>
+
+    <div class="banner-caption">
+      <h1>Workplace Safety & Job Awareness</h1>
+      <p>Empowering Chennai’s workforce through safety training and secure employment opportunities</p>
+      <a href="#stats" class="btn btn-light btn-lg mt-3">Explore Reports</a>
+    </div>
+  </section>
+
+
+    <section>
+        <div class="container mt-5" id="jobs">
+            <h2 class="text-center mb-4">Choose your jobs</h2>
+            <div class="container mt-5 mb-5 d-flex gap-3 flex-wrap justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/call.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Call Centre</h5>
+                        <p> Customer support roles offering steady income, language-based hiring, & 24×7 shift
+                            flexibility.</p>
+                        <a href="#" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#callCentreModal">Know More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/taxi.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cab Service</h5>
+                        <p> Flexible driver-partner jobs with strong income potential based on working hours &
+                            customer ratings.
+                        </p>
+                        <a href="#" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#callCentreModal">Know More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/delivery.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Delivery</h5>
+                        <p> Fast-growing jobs where anyone with a bike & smartphone can earn through food or parcel
+                            delivery.</p>
+                        <a href="#" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#callCentreModal">Know More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/security.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Security</h5>
+                        <p>Steady jobs in apartments, malls, and offices with consistent demand & minimal skill
+                            requirements.</p>
+                        <a href="#" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#callCentreModal">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="container-fluid" style="background-color: rgb(255 241 201); " id="safety">
+
+        <div class="container py-2">
+            <div class="row g-4 align-items-center">
+                <!-- LEFT: Text / Content -->
+                <div class="col-12 col-md-7">
+                    <div class="text-side">
+                        <h2 class="h3">Safety Concerns — Delivery & Logistics</h2>
+                        <p class="mb-1">Identify common hazards for delivery personnel: road safety risks, fatigue,
+                            lifting injuries and adverse weather exposure. Prioritize training and PPE to reduce
+                            incidents.</p>
+                        <ul class="mb-2">
+                            <li>Road & traffic accidents — safe driving training & fatigue management</li>
+                            <li>Manual handling — correct lifting techniques & trolleys</li>
+                            <li>Personal security — secure routes, partner check-ins</li>
+                            <li>Weather exposure — appropriate clothing & rest breaks</li>
+                        </ul>
+                        <a href="#" class="btn btn-warning btn" data-bs-toggle="modal"
+                            data-bs-target="#safetyModal">Safety Checklist Form
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Images / Carousel -->
+                <div class="col-12 col-md-5">
+                    <div class="image-side">
+
+                        <!-- Bootstrap Carousel (optional). Replace src with your image URLs -->
+                        <div id="rightCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+                            <div class="carousel-inner shadow-sm rounded">
+                                <div class="carousel-item">
+                                    <img src="img/call.png" class="d-block w-100 img-fluid rounded"
+                                        alt="Delivery scene 3">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="img/delivery.png" class="d-block w-100 img-fluid rounded"
+                                        alt="Delivery scene 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/security.png" class="d-block w-100 img-fluid rounded"
+                                        alt="Delivery scene 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/taxi.png" class="d-block w-100 img-fluid rounded"
+                                        alt="Delivery scene 3">
+                                </div>
+                            </div>
+
+                            <!-- controls (small) -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#rightCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#rightCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <!-- /Carousel -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="bg-light py-5" id="stats">
+        <div class="container">
+            <h2 class="text-center mb-4">Reports</h2>
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col border border-primary p-4 m-2 rounded">
+                        <h1>3.2K</h1>
+                        <h5>Lakhs </h5>
+                        <p>Estimated Workers in Call Center Chennai</p>
+                    </div>
+                    <div class="col border border-success p-4 m-2 rounded">
+                        <h1>1.5K</h1>
+                        <h5>Lakhs </h5>
+                        <p>Estimated Workers in Cab Service Chennai</p>
+                    </div>
+                    <div class="col border border-warning p-4 m-2 rounded">
+                        <h1>2.5K</h1>
+                        <h5>Lakhs </h5>
+                        <p>Estimated Workers in Delivery Jobs Chennai</p>
+                    </div>
+                    <div class="col border border-info p-4 m-2 rounded">
+                        <h1>1.2+</h1>
+                        <h5>Lakhs </h5>
+                        <p>Estimated Workers in Security Job Chennai</p>
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col border border-primary p-4 m-2 rounded">
+                        <h1>20%</h1>
+                        <h5>Growth </h5>
+                        <p>Call centres maintain <br>steady Growth</p>
+                    </div>
+                    <div class="col border border-success p-4 m-2 rounded">
+                        <h1>30%</h1>
+                        <h5>Growth</h5>
+                        <p>Cab services driven by urban demand and flexible work.</p>
+                    </div>
+                    <div class="col border border-warning p-4 m-2 rounded">
+                        <h1>40%</h1>
+                        <h5>Growth</h5>
+                        <p>Higher value growth in Delivery Jobs Chennai</p>
+                    </div>
+                    <div class="col border border-info p-4 m-2 rounded">
+                        <h1>15%</h1>
+                        <h5>Growth </h5>
+                        <p>Expanding slower but remain essential in malls, offices..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="container-fluid" style="background-color: #ffc107;">
+
+        <footer class="py-3">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-black">Home</a></li>
+                <li class="nav-item"><a href="#jobs" class="nav-link px-2 text-black">Jobs</a></li>
+                <li class="nav-item"><a href="#safety" class="nav-link px-2 text-black">Safety</a></li>
+                <li class="nav-item"><a href="#stats" class="nav-link px-2 text-black">Statistics</a></li>
+                
+            </ul>
+            <p class="text-center text-black">© 2025 Echoes of Chennai Survival Company, Inc</p>
+        </footer>
+    
+
+</section>
+
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="registerModalLabel">Registration Form</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 text-start">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="jobType" class="form-label">Job Type</label>
+                            <select class="form-select" id="jobType" required>
+                                <option selected disabled>Select job type</option>
+                                <option>Call Centre</option>
+                                <option>Taxi Driver</option>
+                                <option>Delivery Partner</option>
+                                <option>Security Guard</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                required>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success px-4">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="loginModalLabel">User Login</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 text-start">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password"
+                                required>
+                        </div>
+
+                        <div class="form-check text-start mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success px-4">Login</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <p class="m-0 text-center w-100">Don’t have an account?
+                        <a href="#" class="text-primary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">Register</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="callCentreModal" tabindex="-1" aria-labelledby="callCentreModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="callCentreModalLabel">Enquiry Form</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="joinForm">
+                        <div class="mb-3 text-start">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="email" class="form-label">Email ID</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                required>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="exp" class="form-label">Experience Level</label>
+                            <select class="form-select" id="exp" required>
+                                <option selected disabled>Choose experience level</option>
+                                <option>Fresher</option>
+                                <option>1 - 2 years</option>
+                                <option>3 - 5 years</option>
+                                <option>Above 5 years</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="shift" class="form-label">Preferred Shift</label>
+                            <select class="form-select" id="shift" required>
+                                <option selected disabled>Select shift</option>
+                                <option>Day Shift</option>
+                                <option>Night Shift</option>
+                                <option>Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label for="resume" class="form-label">Upload Resume</label>
+                            <input type="file" class="form-control" id="resume" accept=".pdf,.doc,.docx">
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success px-4">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <small class="text-muted w-100 text-center">
+                        We’ll contact shortlisted candidates within 3–5 working days.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="safetyModal" tabindex="-1" aria-labelledby="safetyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow-lg">
+
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="safetyModalLabel">Safety Checklist Form</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="safetyForm">
+
+                        <!-- Basic Info -->
+                        <div class="row mb-3">
+                            <div class="col-md-6 text-start">
+                                <label for="name" class="form-label">Employee Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 text-start">
+                                <label for="jobType" class="form-label">Job Type</label>
+                                <select id="jobType" class="form-select" required>
+                                    <option selected disabled>Select Job Type</option>
+                                    <option>Call Centre</option>
+                                    <option>Delivery</option>
+                                    <option>Security</option>
+                                    <option>Taxi Driver</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Checklist Section -->
+                        <h6 class="text-start mt-4 mb-2 text-primary">Safety Checks</h6>
+                        <div class="text-start">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="helmet">
+                                <label class="form-check-label" for="helmet">Wearing Helmet / Safety Gear</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="firstAid">
+                                <label class="form-check-label" for="firstAid">First Aid Kit Available</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="hydration">
+                                <label class="form-check-label" for="hydration">Drinking Water & Hydration
+                                    Access</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="training">
+                                <label class="form-check-label" for="training">Received Safety Training</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="emergency">
+                                <label class="form-check-label" for="emergency">Knows Emergency Contact
+                                    Procedures</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="equipment">
+                                <label class="form-check-label" for="equipment">Equipment Checked & in Good
+                                    Condition</label>
+                            </div>
+                        </div>
+
+                        <!-- Additional Comments -->
+                        <div class="mt-3 text-start">
+                            <label for="comments" class="form-label">Comments / Observations</label>
+                            <textarea id="comments" class="form-control" rows="3"
+                                placeholder="Write any remarks..."></textarea>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-success px-4">Submit Checklist</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <small class="text-muted w-100 text-center">Ensure all safety measures are checked before duty
+                        begins.</small>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

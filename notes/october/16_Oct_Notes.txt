@@ -1,0 +1,211 @@
+Topics:
+
+Non Primitive data:
+Collection of data, the data always have Reference
+
+Array:
+-> Collection of data types or data or values
+-> Collection of datas stored in a single value 
+
+
+
+sign = [] (array bracket) 
+
+let arr = [] // empty array
+let arr = ["this is", string, number, boolean] (1 dimensional array)
+
+1,2, multi dimensional array
+
+Object:
+->Collection of structured data
+->Must have key value pair 
+->Use object we give classification of our own datas
+->easily access the data 
+->Using keys or values 
+-> sign = {} object symbol 
+
+{
+    Statement means block
+}
+
+{key:"this is datas"}
+
+
+
+
+array of object: 
+-> Structured Collection of objects 
+sign = [{}] array of objects  
+
+
+
+
+
+
+Functions: Important 
+-> A function is a block of reusable code that performs a specific task. 
+-> function is mini program 
+-> normal function declaration
+-> all function return the values 
+-> Once we put return in the function then the nxt line or code not executed.
+
+1. Normal Function:  (Named Function)
+ 
+ -> Function declare 
+ -> Function invoked 
+ -> Execution start 
+ -> Return the values give back to the caller 
+ -> If return present the output will return 
+
+Syntax:
+
+() 
+    function () {
+
+    }
+
+Example: 
+
+    function add() {  // statement 
+
+    }
+
+2. Anonymous Function 
+   -> Function without a name 
+   -> Usually stored in a variable
+   -> const used 
+
+Syntax:
+   const add = function () {    // Expression 
+   }
+
+    
+
+3. Arrow Function: (Introduce in ES6)
+    -> single line function
+
+    const add = () => {
+
+    }
+
+
+
+Function: 
+3 types:
+Normal Function : declaration, invoke, Execution part 
+Anonymous Function: const a = function add () {}
+Arrow Function: const a =() => {}
+
+
+
+Immediate Invoked Function expression: (IIFE)   (Interview Question)
+-> function run Immediately runs automatically it is created.
+
+Syntax:
+
+        (){}()
+
+Example:
+
+    (function(){
+        
+    }())
+
+    const add = {
+
+    } () 
+    
+
+
+Difference between normal, Anonymous, arrow
+
+Normal:
+-> this keyword used in normal function 
+
+Anonymous: 
+-> Hoisting not done in Anonymous
+-> this keyword used in Anonymous function
+-> Call back function
+
+arrow:
+-> Hoisting not done in Anonymous
+-> 'this' keyword Inbuilt in arrow function 
+-> Call back function & react projects, advanced mern or node projects 
+
+
+Parameters & Arguments:
+
+Parameters:
+ -> Name listed in the function declation or Definition like variable
+ 
+ const add = ()=>{
+
+ }
+
+
+ Example: //the a,b,c,d,e will use in console.log why because parameters declaration or Definition like variable
+    const add = (a,b,c,d,e)=>{  //dynamic process    
+        console.log(a,b,c,d,e);
+    }
+    add("This")           // arguments 
+
+
+Arguments:
+ -> actual values fast when calling the function
+
+
+Hoisting Method: (Important) 
+Scoping:
+
+
+
+
+
+Task:
+1. array 12 times (console.log 0 index value)
+2. Object creation with console 12 times 
+3. Array of objects - 12 time 6 array of object 6time nested object with console.log statement
+4. Return statement only in notepad 
+5. Normal, Anonymous, Arrow function 28 times different names 
+6. Arguments & Parameters - 14 times 
+7. collection of object (optional) 
+
+
+Self Learning Tracker 
+
+for loop
+while loop
+do while
+
+
+
+
+
+
+
+Array:
+
+    <script>     
+        var arr = [1, 2, 3, 4];  
+        console.log(arr[0]);
+    </script>
+
+    <script>     
+        var arr = ["hello", "world"];  
+        console.log(arr[0]);
+    </script>
+
+    <script>
+        var arr =[1,2,"World"];
+        console.log(arr[2]);
+    </script>
+
+    <script>
+        let arr = [0,1,2,4,5];
+        console.log(arr[3]);
+    </script>
+
+    <script>
+        
+    </script>
+

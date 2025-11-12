@@ -1,0 +1,161 @@
+Today Topics:
+
+For each condition - mostly used in javascript
+
+map, Filter, find, reduce - because of for loop (mostly used in react)
+
+Map:
+Use the already array then process New array return 
+
+High Order Method:
+
+filter():
+-> Return a new array that pass a full condition.
+
+Syntax:
+filter((currentvalue or elements, index, new array)=>)
+
+Example: 
+const arr = [1,2,3,4,5,6]
+let even = arr.filter((n)=>n%2==0)
+console.log(even);
+
+
+find():
+-> Return first element that matches condition 
+
+Example:
+const arr = [2,3,4,5]
+let even = arr.find((n)=>n%2==0)
+console.log(even);
+
+
+reduce():
+Reduce the array to a single value 
+
+Syntax:
+reduce((accumulator, currentValue, index, array ) => accumulator + currentValue)
+
+Example:
+    <script>
+        const ars = [10, 20, 30, 40]
+        const sum = ars.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log('Reduce Function', sum);
+    </script>
+
+
+find Index()
+Return index of first element that satisfy the condition.
+-> return Index value 
+
+Syntax:
+array.findIndex((n)=>n >= value)
+
+Example:
+const array = [1,2,3,4]
+const value = array.findIndex((n)=>n >= 3)
+
+
+Some():
+Return true when any element passes 
+
+Syntax:
+arr.some((n)=>n>2)
+
+Example:
+const arr = [2,1]
+let a = arr.some((n)=>n>2)
+console.log(a)
+
+
+Every():
+Returns true when all element 
+
+Syntax:
+arr.every((n)=>n>2)
+
+Example:
+const arr = [2,1]
+let a = arr.every((n)=>n>2)
+console.log(a)
+
+
+Sort():
+Compare function
+Ascending order or descending order (Use strings)
+shortsarray() by default automatically, alphabetically
+
+Syntax:
+arr.sort(compare function)
+
+Example:
+const arr = ["a","hello", "world"]
+let a = arr.sort();
+console.log(a)
+
+
+toString():convert number to string 
+
+from(): create array from a string or objects
+Syntax:
+array.from();
+
+Example:
+let str = "Arasan"
+let arr = array.from(str);
+console.log(arr);
+
+Output:
+['A', 'r', 'a','s','a','n']
+
+
+isArray(): 
+Check its array or not 
+
+Syntax:
+Array.isArray();
+
+Example:
+let str = "Arasan"
+let newarray=Array.isArray(str);
+console.log(newarray);
+
+
+Index value:
+let a ="Guru"
+let b = a.charAt((1))
+console.log(b);
+
+
+Object:
+Each key also called as key. Each value can be any data type.
+Loop with object.
+
+Object of and Object in 
+
+Object - for in (return the property or index, works with objects)
+                (array - use index to work)
+         for of (using values to process)(array)
+
+Example:
+for in:
+let obj = {name:"React", values:"set of values"}  
+for(let key in obj){
+    console.log('Key', obj[key]);
+}
+
+for of :
+let obj = ["React","set of values"]  
+for(let key of obj){
+    console.log('Key', obj[key]);
+}
+
+
+Task:
+find filter reduce - 12 times 
+Array has 4 values will shown first letter 
+Using Object 
+    let obj = {name:"React", values:"set of values"}   // object creation 
+    console.log(obj.name) 
+for in and for of each 12 times 
+  

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+        }
+
+        .header {
+            color: rgb(110 48 1);
+            background-color: white;
+            display: block;
+            padding: 10px;
+            font-weight: 400;
+        }
+
+        .list {
+            display: none;
+            color: white;
+            font-size: 20px;
+            border-radius: 25px;
+            justify-content: center;
+        }
+
+        button {
+            margin: 10px;
+            font-size: 20px;
+            border: 1px solid rgb(110 48 1);
+            width: 220px;
+            height: 45px;
+            border-radius: 25px;
+        }
+
+        button:hover {
+            background-color: rgb(144, 63, 1);
+            color: white;
+            border: 2px solid rgb(106, 73, 29);
+        }
+
+        footer {
+            background-color: rgb(110 48 1);
+            color: white;
+            padding: 10px;
+        }
+
+        .bgimage {
+            background-image: url(img/background.png);
+            height: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="header">
+            <h1> BrewHub Developers </h1>
+        </div>
+        <img src="img/banner.png" alt="" width="100%">
+
+
+        <div class="bgimage">
+            <button id="showProducts">Available Products</button>
+
+            <div id="hidebutton" class="list">
+                <button id="teapay">Tea</button>
+                <button id="coffeepay">Coffee</button>
+                <button id="horlickspay">Horlicks</button>
+                <button id="boostpay">Boost</button>
+            </div>
+
+            <button id="pay" style="display: none;">Payment</button>
+            <h3 id="heading"> </h3>
+            <img id="image" src="" width="200" style="display: none; align-items: center;">
+
+
+        </div>
+
+        <div>
+            <footer>
+                &copy; 2025 Copyrights. All Rights Reserved.
+            </footer>
+        </div>
+    </center>
+</body>
+
+<script>
+    const products = {
+        tea: "img/tea.png",
+        coffee: "img/coffee.png",
+        horlicks: "img/horliks.png",
+        boost: "img/boost.png"
+    };
+
+    const btnShow = document.getElementById("showProducts");
+    const btnList = document.getElementById("hidebutton");
+    const payBtn = document.getElementById("pay");
+    const img = document.getElementById("image");
+
+
+    btnShow.addEventListener("click", () => {
+        if (btnList.style.display === "block") {
+            btnList.style.display = "none";
+            payBtn.style.display = "none";
+            img.style.display = "none";
+            heading.textContent = "";
+        } else {
+            btnList.style.display = "block";
+        }
+    });
+
+
+    function selectProduct(productName) {
+        payBtn.style.display = "block";
+        img.style.display = "block";
+        img.src = products[productName];
+    }
+
+
+    document.getElementById("teapay").addEventListener("click", () => selectProduct("tea"));
+    document.getElementById("coffeepay").addEventListener("click", () => selectProduct("coffee"));
+    document.getElementById("horlickspay").addEventListener("click", () => selectProduct("horlicks"));
+    document.getElementById("boostpay").addEventListener("click", () => selectProduct("boost"));
+
+
+    payBtn.addEventListener("click", () => {
+        alert("Thanks for your order!");
+        payBtn.style.display = "none";
+        img.style.display = "none";
+        heading.textContent = "Order completed!";
+    });
+
+
+</script>
+
+
+
+</html>

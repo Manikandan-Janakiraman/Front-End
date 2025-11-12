@@ -1,0 +1,139 @@
+HTML File System
+tags
+Elements
+Web Pages 
+Connected pages - Website
+Attributes
+
+Syntax:1
+attributename = "value"
+id=name
+<h1> - open tag 
+Content - Hi there - Content 
+</h2> closing tag
+
+P tag Syntax:
+<tagname> Content </tagname>
+
+Ex. <p> This is paragraph </p>
+
+
+CSS : 
+CSS Stands for Cascading Style sheet 
+
+Cascading - Priority of how css applies styles when multiple rules exist.
+Which style is the priority specificity 
+
+1. case - Kebab - Case 
+2. Background-color
+3. id = totally small
+4. Class = usage 
+
+How html element look an 
+To apply the style, layout, fonts
+
+CSS - Presentation, Designs and Layout 
+CSS is only for making a layout of ur webpage and present your webpage (Colors, fonts, size)
+
+Specificity (Interview question)
+(ID and class - ID tag only come first, then css will run)
+
+Types of stylesheet:
+Inline, Internal, External
+
+
+
+
+
+Specificity:
+ -> Priority of css selector when more than one rule apply 
+    Example: ID and Class 
+ -> Highest priority Style
+ -> ID 
+ -> Class
+ -> Element
+
+Extension: style.css, main.css 
+
+CSS Rule consists of selector and declaration blocks.
+
+Selector Types:
+Class
+ID
+Element
+group 
+multiple
+Universal
+
+simple selector
+combinator selector 
+pseudo class selector
+pseudo element selector 
+Attriute selector 
+
+CSS Syntax:
+h1 {
+    property-name: property value;
+}
+
+List of property:
+font-size, font-family, width, height, display, padding, margin, color, background-color, transform,
+border,  border-radius, line-height, letter-spacing, box-sizing, text-align, transition, font-weight,
+cursor, float, flex, max-width, max-height,text-align, display, text-decoration, 
+
+-> Multiple Declaration Part for one selector 
+-> semicolon ; to split the declaration 
+
+
+Inline CSS:
+<p style="font-size:20px; font-family:'Arial',sanserif; width:100%;">This is paragraph</p>
+
+Assignment:
+Text oriented properties and values in css 
+
+
+Internal CSS:
+-> Inside the heading tags
+    <style>
+    h1 {
+        font-size:20px;
+        color:#red;
+    }
+
+External CSS:
+<link rel="stylesheet" href="css/style.css">
+
+Box Model:
+-> Clean and clear Layout Method.
+-> Most usable tags div in html 
+-> margin, padding, border,content (Rule)
+-> class selector means . will use 
+
+Padding : content around the spacing (Invisible) 
+Border: Intermediate between padding and margin, thicknes or line around he element. (Visible)
+Margin: Border around the space, Space outside the border  (Invisible) 
+
+Box Model Rule:
+1. margin
+2. border
+3. padding
+4. content
+
+Example:
+.box {
+    margin:2px;
+    border:1px solid black;
+    padding: 20px;
+    width:200px;
+    height:100px;
+    text-align:center;
+    background-color:#000;
+    color:#fff;
+}
+
+
+1. 4 box with different colours 
+2. Box - insert image, link, content 
+
+
+

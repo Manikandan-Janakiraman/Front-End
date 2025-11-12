@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problems of Environment</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="parent" id="parent">
+
+        
+        <form id="myform" class="form">
+            <h3>Enquiry Form</h3>
+            
+                <label>Enter your name :</label>
+                <input id="name" type="text" placeholder="Enter your Name">
+
+                <label>Enter your Mobile no :</label>
+                <input id="mobile" type="tel" placeholder="Enter your Mobile no ">
+           
+
+                <label>Enter the Problem :</label>
+                <textarea id="problem" required placeholder="Type your text here"></textarea>
+         
+
+                <label>Where it Happens in the city :</label>
+                <textarea required id="city" placeholder="Type your text here"></textarea>
+         
+
+                <label>How do you know :</label>
+                <textarea required id="know" placeholder="Type your text here"></textarea>
+            
+                <label>Review the Problem:</label>
+                <textarea required id="review" placeholder="Type your text here"></textarea>
+                <button id="btn" type="submit">Login</button>
+            
+
+            <p id="para"></p>
+
+
+
+        </form>
+
+    </div>
+
+    <script>
+
+        const form = document.getElementById("myform")
+        const para = document.getElementById("para")
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+
+            const username = document.getElementById("name").value
+            const mobile = document.getElementById("mobile").value
+            const problem = document.getElementById("problem").value
+            const happens = document.getElementById("city").value
+            const know = document.getElementById("know").value
+            const review = document.getElementById("review").value
+
+            if (!username || !mobile || !problem || !happens || !know || !review) {
+                para.innerText = "Please fill all fields before submitting";
+                para.style.color = "blue";
+                return;
+            }
+
+            if (mobile.length !== 10) {
+                para.innerText = "Mobile number must be exactly 10 digits";
+                para.style.color = "blue";
+                return;
+            }
+
+            const data = JSON.parse(localStorage.getItem("formdata")) || [];
+            console.log(data);
+            const storedata = { username, mobile, problem, happens, know, review }
+            console.log(storedata);
+
+            data.push(storedata);
+            localStorage.setItem("formdata", JSON.stringify(data));
+
+
+
+
+            alert("Successfully submitted")
+            form.reset();
+            window.location.href = "table.html"
+        })
+
+
+    </script>
+</body>
+
+</html>

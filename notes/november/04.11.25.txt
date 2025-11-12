@@ -1,0 +1,127 @@
+callback():
+A callback function is a Function parsed as an argument to another function
+and its Executed after the main task is completed.
+
+<script>
+    const makeTea = (customerName, process) => {
+        console.log(`Order Received for ${customerName}`);
+    
+        setTimeOut(()=>{
+            console.log("Tea is ready");
+            proess();
+        },3000)
+
+    }
+
+    const serveTea = ()=>{
+        console.log(`Serving Tea`);
+    }
+makeTea("Mani",serveTea)
+
+
+</script>
+
+
+callback hell :
+Multiple Asynchronize process Pyramid of Doom 
+
+const makeTea = ()=>{
+    const makesnacks = ()=>{
+        const makeBill = ()=> {
+            console.log('Done');
+        }
+    }
+}
+
+makeTea(()=>{
+    makesnacks(()=>{
+        makeBill(()=>{
+            console.log('Everything ok');
+        })
+    })
+});
+
+Promises:
+To avoid the callback hell process we use promise Methods.
+A promise represents a value that will be available in the future. 
+It has 3 states 
+    pending (still working)
+    resolved (fulfilled or completed successfully)
+    rejected (fail or error)
+
+
+const makeTea = ()=>{
+                        // parameters
+    return new Promise((resolve, rejecte)=>{})
+}
+
+
+Promise Prototype:
+catch, constructor, finally, then (once after another)
+
+resolve - fulfill call back
+reject - error callback
+then - once after callback
+catch - callback function 
+
+
+You can chain multiple .then() to perform step by step operations 
+
+(()=>{}) - callback function 
+
+try catch:
+try {
+
+}catch (error){
+
+}
+
+
+
+callback:
+
+
+
+
+
+
+Task:
+18 times 
+
+Promise syntax:
+
+const makeTea = ()=>{
+    return new Promise((resolve, reject)=>{})
+}
+
+//Promise ((r,r)=>{})
+
+new = keyword
+Promise = Methods
+resolve, reject = parameters
+
+.then() syntax - 12 times 
+
+
+
+
+First create a callback function change to promise 
+
+promise.all()
+promise.race()
+promise.any()
+
+Interview Question:
+What is callback hell?
+how to convert a callback to promise?
+How to avoid callback hell?
+What are promises states?
+What are promise Methods?
+Promise instance methods fetch, .then, catch, finally 
+Difference between promise and callback.
+
+
+
+Developer practise purpose (Logical Thinking)
+hacker Rank
+Leet code 

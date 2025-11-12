@@ -1,0 +1,144 @@
+ES6 Features 
+
+Template literals 
+-> Allow you to embedded Variables and expressions inside strings using backticks (`````)
+
+Tilt ( ~ ~ ~)
+
+
+backticks (````):
+-> to connect string and variable
+-> Used in print, alert, statement
+
+-> Easy to write multiline strings 
+-> Easily combine string and Variables
+
+
+Example:
+
+// only variable
+let a = 10;
+console.log(`My value is ${a}`);
+
+// variable and string
+let a = 10;
+let b = "Value"
+console.log(`My value is ${a} adn ${b}`);
+
+// Output on the screen 
+let a = 10;
+let b = "Value"
+document.write(`Tis is the process ${a} Yes the process`)
+
+Ternary Operator:
+-> Single line condition
+-> a short form of if-else condition 
+
+Syntax:
+condition?"":""
+
+Example:
+
+let add = 10
+
+add ===10?"Yes this is process ${add}" : "No this is not process ${add}"
+console.log(add ===10?"Yes this is process ${add}" : "No this is not process ${add}")
+
+
+
+Default Parameter:
+
+
+
+Example:
+             //parameters 
+const add = (a) => {
+    reaturn a
+}
+console.log(add("React"));
+
+
+             //parameters 
+const add = (a="Node") => {
+    reaturn a
+}
+console.log(add());
+
+
+
+Optional Chaining: 
+-> It prevents an error when accessing deep nested object that might not exist 
+
+In react optional rendering
+
+Symbol: ? 
+
+
+            //nested objects
+let users = {profile:{name:"React"}}
+console.log(users.profile.age)
+
+output: undefined
+
+
+let users = {profile:{name:"React"}}
+console.log(users?.profile?.age)                  uncatched profile error 
+
+
+
+
+
+Nullish coalescang operator:
+-> used to provide the default value only the left side is null or undefined 
+
+Symbol: ??
+
+Example:
+let username = null;
+let display = username??"Guest"
+console.log(display);
+
+
+
+
+FORM:
+<form>
+<input type="text" id="data" placeholder="Enter Name"></input>
+</form>
+
+
+const datasfrominput = document.getelementbyID("data").value
+const btn_1 = document.getelementbyID("btn");
+
+                             // event object
+btn_1.addEventListener("click",(teashop)=>{
+
+    teashop.preventDefault()
+
+const datasfrominput = document.getelementbyID("data").value
+alert(datasfrominput)
+})
+
+Event object: (teashop)
+
+
+
+prevents default function:
+
+It is a method in javascript that stops the default behaviour of html element from happening 
+
+evenobject.preventDefault()
+
+
+
+
+
+
+Task:
+
+log(`string ${} String${}`) - 12 times 
+condition?"":"" - 12 times 
+
+
+
+

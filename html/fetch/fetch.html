@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Process</title>
+    <style>
+        h4 {
+            color: rgb(190, 4, 4);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Fetch Data from an Online API</h2>
+    <div id="block">
+    </div>
+
+    <script>
+        const getdata = async () => {
+            try {
+                console.log('fetching data');
+                const cards = await fetch("https://dummyjson.com/users?limit=2")
+                const result = await cards.json()
+                const data = result.users;
+                const container = document.getElementById("block")
+
+                data.forEach(products => {
+                    const box = document.createElement("div")
+                    box.innerHTML = `<h4>${products.firstName}</h4>
+                                 <p>${products.lastName}</p>
+                                 <p>${products.maidenName}</p>
+                                 <p>${products.age}</p>
+                                 <p>${products.gender}</p>
+                                 <p>${products.email}</p>
+                                 <p>${products.phone}</p>
+                                 <p>${products.username}</p>
+                                 <p>${products.password}</p>
+                                 <p>${products.birthDate}</p>
+                                 <p>${products.image}</p>
+                                 <p>${products.bloodGroup}</p>
+                                 <p>${products.height}</p>
+                                 <p>${products.weight}</p>
+                                 <p>${products.eyeColor}</p>
+                                 <p>${products.email}</p>`
+                    container.appendChild(box)
+                });
+            } catch (error) {
+                console.log("something went wrong", error)
+            } finally {
+                console.log("process done !")
+            }
+        };
+        getdata()
+
+    </script>
+</body>
+
+</html>

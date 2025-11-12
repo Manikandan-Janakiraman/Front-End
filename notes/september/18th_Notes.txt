@@ -1,0 +1,14 @@
+Form:
+To get Data Input(single data), action, form(Collective data)
+
+maxlength = 10 (1234567890)
+minlength = 4 (1234)
+Example: Mobile no, password
+
+
+Minimum - 10
+Maximum - 10
+Example: Age
+
+Upload Image - jpg, png extension
+Upload REsume - pdf, docx

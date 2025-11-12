@@ -1,0 +1,167 @@
+Media Tags & Media Queries
+
+Media Queries:
+ -> CSS Rule used to apply different styles depending on device characteristics.(Device Responsiveness)
+
+ Screen Width/height
+ Device Orientation -> Landscape, Portrait
+ Resolution
+ Color Schema -> dark, light screen 
+ Responsive Design
+
+Extra Small Phones -> 0 to 480px
+Small, Large Phones -> 481 to 600px
+Medium, tablets -> 601px to 768px
+Large, laptops -> 769px to 1024px
+Extra Large, desktop, tv -> 1025px to 1200px 
+Ultra wide 4k display -> above 1600px 
+
+
+Maximum width -> 0 to 100
+Minimum width -> 100 and above 
+
+
+Syntax:
+
+@media (condition){
+    selector {
+        property:values;
+    }
+}
+
+@media screen {
+
+}
+
+
+Example:
+
+@media (max-width:1600px){
+    body {
+        background-color:#fff;
+    }
+}
+
+@media (max-width:1200px){
+    body {
+        background-color:#fff;
+    }
+}
+
+@media (max-width:1024px){
+    body {
+        background-color:#fff;
+    }
+}
+
+@media (max-width:768px){
+    body {
+        background-color:#fff;
+    }
+}
+
+@media (max-width:600px){
+    body {
+        background-color:#fff;
+    }
+}
+
+@media (max-width:400px){
+    body {
+        background-color:#fff;
+    }
+}
+
+Ordering Format:
+Big Screen
+Large screen
+Medium Screen
+Small Screen
+Extra small screen 
+
+
+Animation: 
+ ->Real frontend UI motion effects 
+
+Transitions:
+ -> Smoothly changing property value from one state to another state like hover, click, mouse drag etc...(AS)
+
+Syntax:
+ selector {
+    transition: property duration timing-function delay;
+ }
+
+.btn{
+    background-color:#blue;
+    border:none;
+    transition: all 0.5s ease;
+
+}
+.btn:hover {
+    background-color:#fff;
+    transform:scale(1.1)
+}
+
+
+
+Transform:
+ -> Allows movement, scaling, rotation, skewing of the element.
+
+Syntax:
+selector {
+    transform:function(value);
+    transform:translate(x,y);
+    transform:rotate(deg);
+    transform:skew(x,y);
+}
+
+translate -> movement 
+scale -> resize of the element 
+rotate -> rotate
+skew -> tilt/shear
+
+
+Bootstrap:
+ -> Framework for front end design and free open source css framework 
+ -> use to design responsive and mobile first website quickly 
+
+CDN - Content Delivery Network
+
+
+
+Bootstrap Webpage flow
+
+
+
+Task 1:
+Extra small - phones - 0 - 480px                           - Hide the box
+Small - large phone - 481 -600px 		   - Show the box
+medium- tablets - 601px - 768px		   - Hide the box
+large - laptops - 769px - 1024px                          - Show the box 
+extra large - desktops - 1025px - 1200px             - Hide the box
+ultra wide - 4k displays - 1600px                          - Show the box
+
+Task 2:
+Create a form 
+Create a button
+Create a cards using animation 
+transform properties and transitions
+
+Task 3:
+What is JS ? 
+Why We use JS?
+When we use JS?
+Where we use JS?
+Types of JS?
+IF using JS what is the happening on the webpage?
+Without JS , List any other programming languages in Frontend?
+
+Task 4:
+Important Classes & properties :
+breaking points 
+container fluids
+typography 
+images
+color and background colour 
+flex
+container- fluid class 

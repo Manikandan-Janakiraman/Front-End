@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    background-color: rgb(183, 221, 250);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 800px;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+/* .form input.text, input.email, input.password{
+    background-color: lightgoldenrodyellow;
+    color: black;
+    width:30%;
+    
+} */
+
+input#name, input#mobile {
+    height: 30px;
+    border-radius: 10px;
+    width:400px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+
+textarea#problem, textarea#know, textarea#review, textarea#city {
+    height: 30px;
+    border-radius: 10px;
+    width:400px;
+    height:50px;
+    border: 1px solid black;
+    padding: 10px;
+}
+table {
+    border:1px solid rgb(255, 255, 255);
+    background-color: rgb(131, 25, 25);
+    color: #ffffff;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 1600px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form input.textarea{
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+label {
+    font-size: 18px;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-color: rgb(131, 25, 25);
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    border-radius: 18px 18px 0px 0px;
+}
+
+ #btn {
+    background-color: rgb(131, 25, 25);
+    color: white;
+    height: 40px;
+    width: 90px;
+    border:none;
+    border-radius: 25px;
+ }
+  #btn:hover {
+    background-color: rgb(204, 13, 13);
+    color: white;
+    height: 40px;
+    width: 90px;
+    border:none;
+    border-radius: 25px;
+ }
+

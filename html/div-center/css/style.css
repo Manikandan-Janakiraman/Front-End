@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(200, 70, 135);;
+}
+
+.logo {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    display: flex;
+    justify-content: space-around;
+    width: 5%;
+
+}
+
+.nav a {
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+.nav h1 {
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.parent {
+    display: flex;
+    background-color: blanchedalmond;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.child {
+    max-width: 300px;
+    padding: 30px;
+    background-color: rgb(200, 70, 135);
+    margin: auto;
+    font-family: Arial, sans-serif;
+}

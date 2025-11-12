@@ -1,0 +1,432 @@
+Variable:
+
+Syntax: variable keyword variable name; 
+
+Example:
+    var firstName; 
+    var Last_Name; 
+    var DateOfBirth;
+    var bloodGroup;  
+    var mobileNumber;  
+    var Email_Address;  
+    var favouriteBook;  
+    var national_sports;  
+    var acctNumber;  
+    var aadhar_Number; 
+    var BikeName; 
+    var spicy_Food; 
+    var productName;  
+    var emergency_Number; 
+    var fast_food; 
+    var CarRace; 
+    var smartWatch; 
+    var running_race; 
+    var footBall;
+    var cat_dogs; 
+    var LeatherShoes; 
+    var JavaScript;
+    var schoolBus; 
+    var wall_Clock; 
+    var Cricket_Bat; 
+
+
+Variable Initialization Part:
+
+    Variable Keyword Variable name = Value;
+    Printing Statement;
+
+Example:
+   var firstName = "Manikandan";
+   console.log(firstName);
+   var Last_Name = "J";
+   console.log(Last_Name);
+   var favouriteBook = "Wings of Fire";
+   console.log(favouriteBook);
+   var national_sports = "Hockey";
+   console.log(national_sports);
+   var MotherTongue = "Tamil";
+   console.log(MotherTongue);
+   var BikeName = "Yamaha";
+   console.log(BikeName);
+   var spicy_Food = "Biryani";
+   console.log(spicy_Food);
+   var productName = "Asus Laptop";
+   console.log(productName);
+   var CarRace = "F1 Race";
+   console.log(CarRace);
+   var smartWatch = "Fast track";
+   console.log(smartWatch);
+   var footBall = "Barcelona";
+   console.log(footBall);
+   var LeatherShoes = "Red Tape";
+   console.log(LeatherShoes);
+   var JavaScript = "Hello World";
+   console.log(JavaScript);
+   var wall_Clock = "Casio";
+   console.log(wall_Clock);
+   var Cricket_Bat = "Kookaburra";
+   console.log(Cricket_Bat);
+   var favouriteColor = "Blue";
+   console.log(favouriteColor);
+   var Favourite_Car = "BMW";
+   console.log(Favourite_Car);
+   var favourite_City = "London";
+   console.log(favourite_City);
+   var fresh_fruit = "Apple";
+   console.log(fresh_fruit);
+   var touristPlace = "Kodaikanal";
+   console.log(touristPlace);
+   var national_animal = "Tiger";
+   console.log(national_animal);
+   var largestMountain = "Everest";
+   console.log(largestMountain);
+   var HighestPeak = "Himalayas";
+   console.log(HighestPeak);
+   var favouriteFlower = "Rose";
+   console.log(favouriteFlower);
+
+
+
+    var ageLimit = 18 to 24;
+    console.log(ageLimit);
+    var fahrenheit_Value = 100;
+    console.log(fahrenheit_Value);
+    var WeatherTemperature = 38;
+    console.log(WeatherTemperature);
+    var Bike_CC = 150;
+    console.log(Bike_CCageLimit);
+    var BikeNumber = 3155;
+    console.log(BikeNumber);
+    var personWeight = 75;
+    console.log(personWeight);
+    var person_Height = 175;
+    console.log(person_Height);
+    var Shoe_Price = 1800;
+    console.log(Shoe_Price);
+    var mobileNumber = 98844 85312;
+    console.log(mobileNumber);
+    var total_Marks = 480;
+    console.log(total_Marks);
+    var DateOfBirth = 17.07.99;
+    console.log(DateOfBirth);
+    var carNumber = 2144;
+    console.log(carNumber);
+
+    var sun_rise = true;
+    console.log(sun_rise);
+    var value_let = null;
+    console.log(value_let);
+
+
+
+   let firstName = "Manikandan";
+   console.log(first
+Name);
+   let Last_Name = "J";
+   console.log(Last_Name);
+   let favouriteBook = "Wings of Fire";
+   console.log(favouriteBook);
+   let national_sports = "Hockey";
+   console.log(national_sports);
+   let MotherTongue = "Tamil";
+   console.log(MotherTongue);
+   let BikeName = "Yamaha";   console.log(BikeName);
+   let spicy_Food = "Biryani";
+   console.log(spicy_Food);
+   let productName = "Asus Laptop";
+   console.log(productName);
+   let CarRace = "F1 Race";
+   console.log(CarRace);
+   let smartWatch = "Fast track";
+   console.log(smartWatch);
+   let footBall = "Barcelona";
+   console.log(footBall);
+   let LeatherShoes = "Red Tape";
+   console.log(LeatherShoes);
+   let JavaScript = "Hello World";
+   console.log(JavaScript);
+   let wall_Clock = "Casio";
+   console.log(wall_Clock);
+   let Cricket_Bat = "Kookaburra";
+   console.log(Cricket_Bat);
+   let favouriteColor = "Blue";
+   console.log(favouriteColor);
+   let Favourite_Car = "BMW";
+   console.log(Favourite_Car);
+   let favourite_City = "London";
+   console.log(favourite_City);
+   let fresh_fruit = "Apple";
+   console.log(fresh_fruit);
+   let touristPlace = "Kodaikanal";
+   console.log(touristPlace);
+   let national_animal = "Tiger";
+   console.log(national_animal);
+   let largestMountain = "Everest";
+   console.log(largestMountain);
+   let HighestPeak = "Himalayas";
+   console.log(HighestPeak);
+   let favouriteFlower = "Rose";
+   console.log(favouriteFlower);
+
+
+    let OceanValue = 85;
+    console.log(OceanValue);
+    let fahrenheit_Value = 100;
+    console.log(fahrenheit_Value);
+    let WeatherTemperature = 38;
+    console.log(WeatherTemperature);
+    let passportNumber = 1501 1221 1213;
+    console.log(passportNumber);
+    let BikeNumber = 3155;
+    console.log(BikeNumber);
+    let personWeight = 75;
+    console.log(personWeight);
+    let tree_Height = 175;
+    console.log(tree_Height);
+    let Shoe_Price = 1800;
+    console.log(Shoe_Price);
+    let aadhar_Number = 9884 4853 1212;
+    console.log(aadhar_Number);
+    let Ranking_Score = 48;
+    console.log(Ranking_Score);
+    let DateOfExpiry = 17.07.2099;
+    console.log(DateOfExpiry);
+    let PolicyNumber = 2144;
+    console.log(PolicyNumber);
+
+    let marina_Beach = true;
+    console.log(marina_Beach);
+    let value_let = null;
+    console.log(value_let);
+
+
+   
+
+
+
+
+
+
+
+      const firstName = "Manikandan";
+   console.log(firstName);
+   const Last_Name = "J";
+   console.log(Last_Name);
+   const favouriteBook = "Wings of Fire";
+   console.log(favouriteBook);
+   const national_sports = "Hockey";
+   console.log(national_sports);
+   const MotherTongue = "Tamil";
+   console.log(MotherTongue);
+   const BikeName = "Yamaha";
+   console.log(BikeName);
+   const spicy_Food = "Biryani";
+   console.log(spicy_Food);
+   const productName = "Asus Laptop";
+   console.log(productName);
+   const CarRace = "F1 Race";
+   console.log(CarRace);
+   const smartWatch = "Fast track";
+   console.log(smartWatch);
+   const footBall = "Barcelona";
+   console.log(footBall);
+   const LeatherShoes = "Red Tape";
+   console.log(LeatherShoes);
+   const JavaScript = "Hello World";
+   console.log(JavaScript);
+   const wall_Clock = "Casio";
+   console.log(wall_Clock);
+   const Cricket_Bat = "Kookaburra";
+   console.log(Cricket_Bat);
+   const favouriteColor = "Blue";
+   console.log(favouriteColor);
+   const Favourite_Car = "BMW";
+   console.log(Favourite_Car);
+   const favourite_City = "London";
+   console.log(favourite_City);
+   const fresh_fruit = "Apple";
+   console.log(fresh_fruit);
+   const touristPlace = "Kodaikanal";
+   console.log(touristPlace);
+   const national_animal = "Tiger";
+   console.log(national_animal);
+   const largestMountain = "Everest";
+   console.log(largestMountain);
+   const HighestPeak = "Himalayas";
+   console.log(HighestPeak);
+   const favouriteFlower = "Rose";
+   console.log(favouriteFlower);
+
+
+    const OceanValue = 85;
+    console.log(OceanValue);
+    const fahrenheit_Value = 100;
+    console.log(fahrenheit_Value);
+    const WeatherTemperature = 38;
+    console.log(WeatherTemperature);
+    const passportNumber = 1501 1221 1213;
+    console.log(passportNumber);
+    const BikeNumber = 3155;
+    console.log(BikeNumber);
+    const personWeight = 75;
+    console.log(personWeight);
+    const tree_Height = 175;
+    console.log(tree_Height);
+    const Shoe_Price = 1800;
+    console.log(Shoe_Price);
+    const aadhar_Number = 9884 4853 1212;
+    console.log(aadhar_Number);
+    const Ranking_Score = 48;
+    console.log(Ranking_Score);
+    const DateOfExpiry = 17.07.2099;
+    console.log(DateOfExpiry);
+    const PolicyNumber = 2144;
+    console.log(PolicyNumber);
+
+    const marina_Beach = true;
+    console.log(marina_Beach);
+    const value_const = null;
+    console.log(value_const);
+   
+   
+   
+   
+   
+   
+    var firstName = "Manikandan"; // String 
+    console.log(firstName);
+
+    var MobileNo = "12345";  // Number 
+    console.log(MobileNo);
+
+    var Marina = false;   // boolean 
+    console.log(Marina);
+
+    var Marina;    // undefined function 
+    console.log(Marina);
+
+    
+
+
+Let:
+    let firstName; Camel case
+    let Last_Name; snake 
+    let DateOfBirth; upper pascel
+    let bloodGroup; camel 
+    let mobileNumber; camel 
+    let Email_Address; snake 
+    let favouriteBook; camel 
+    let national_sports; snake 
+    let acctNumber; camel 
+    let aadhar_Number; snake 
+    let BikeModel; upper 
+    let spicy_Food; snake 
+    let productName; camel 
+    let emergency_Number; snake 
+    let fast_food; snake
+    let CarRace; upper case
+    let smartWatch; camel
+    let running_race; snake
+    let footBall; camel
+    let cat_dogs; snake 
+    let LeatherShoes; upper pascel case
+    let JavaScript; upper pascel case
+    let schoolBus; camel
+    let wall_Clock; snake 
+    let Cricket_Bat; snake 
+
+
+
+
+     
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+
+    <script>
+        var firstName = "Manikandan";
+        console.log(firstName);
+
+        var lastName = "J"
+        console.log(lastName)
+
+        var Qualification = "B.Tech CSE";
+        console.log(Qualification);
+
+        var Age = "26";
+        console.log(Age)
+
+        var DateOfBirth = "27.07.1999"
+        console.log(DateOfBirth);
+
+        var Blood_Group = "o+";
+        console.log(Blood_Group);
+        
+        var Mother_Tongue = "English";
+        console.log(Mother_Tongue);
+
+        var mobileNumber = "98844 85312";
+        console.log(mobileNumber);
+
+        var emergency_Number = "99102 12345";
+        console.log(emergency_Number);
+
+        var Email_Address ="hello@gmail.com"
+        console.log(Email_Address);
+
+        var Account_Number ="564823413189243"
+        console.log(Account_Number);
+
+        var AccountBalance="25,000";
+        console.log(AccountBalance);
+
+        var totalMarks = "480"
+        console.log(totalMarks);
+
+        var product_Name="Asus"
+        console.log(product_Name);
+
+        var laptop_Model ="Asus Vivobook S";
+        console.log(laptop_Model);
+
+        var productConfiguration ="i5";
+        console.log(productConfiguration);
+
+        var mobileModel ="iPhone 14";
+        console.log(mobileModel);
+
+        var BikeModel = "yamaha";
+        console.log(BikeModel);
+
+        var FavouriteColor = "blue";
+        console.log(FavouriteColor);
+
+        var favourite_car = "BMW";
+        console.log(favourite_car);
+
+        var favourite_city = "London";
+        console.log(favourite_city);
+
+        var Address ="Chennai";
+        console.log(Address);
+
+        var passport_Number ="1234568";
+        console.log(passport_Number);
+
+        var Place_Of_Issue = "Chennai";
+        console.log(Place_Of_Issue);
+
+        var DateOfExpiy = "27 June 2025";
+        console.log(DateOfExpiy);
+    </script>
+</body>
+</html>

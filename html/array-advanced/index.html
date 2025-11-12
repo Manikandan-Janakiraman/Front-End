@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Advanced</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Javascript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Array Advanced</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background">
+
+    </div>
+
+
+
+
+
+    <script>
+        var arr = [1, 2, 3, 4, 5, 6]
+        console.log(arr);
+    </script>
+
+    <!--Pop Function-->
+    <script>  // number
+        const a = [1, 2, 3, 4, 5, 6, 7, 8]
+        console.log('Before Pop', a);
+        a.pop()
+        console.log('After Pop', a);
+    </script>
+
+    <script> //string
+        const z = ["Mani", "bala", "sabareesh", "vel"]
+        console.log('Before Pop', z);
+        z.pop()
+        console.log('After Pop', z);
+    </script>
+
+
+
+    <!--Push-->
+    <script>           //string
+        const b = ["Hello", "Welcome"]
+        console.log('Before Push', b);
+        b.push("to", "the", "World")
+        console.log('After Push', b);
+    </script>
+
+    <script>  //number
+        const c = [1, 2, 3, 4, 5, 6, 7, 8]
+        console.log('original', c);
+        c.push(4, 2)
+        console.log('after', c);
+    </script>
+
+
+    <!--Shift-->
+    <script>
+        const d = [1, 2, 3, 4, 5, 6, 7, 8]
+        d.shift()    // remove first element 
+        console.log('Shift Order', d);
+    </script>
+
+    <!--UnShift-->
+    <script>
+        const e = [1, 2, 3, 4, 5, 6, 7, 8]
+        e.unshift()    // add first element 
+        console.log('Unshift Order', e);
+    </script>
+
+
+
+    <!--Reverse Order-->
+    <script>
+        const f = [1, 2, 3, 4, 5, 6, 7, 8]
+        f.reverse()
+        console.log('Reverse Order', f);
+    </script>
+
+    <!--Concatenation-->
+    <script>    // numbers
+        const g = [1, 2, 3, 4, 5, 6, 7, 8]
+        const h = [44, 66]
+        let i = h.concat(g)   //expression
+        console.log('Concatenation', i);
+    </script>
+
+
+
+    <!--String-->
+    <script>          // string 
+        var j = "Buck Moon "
+        var k = "Welcome to the World"
+        let l = j.concat(k)
+        console.log('Concatenation', l);
+    </script>
+
+
+
+    <!--Join-->
+    <script>      // Join Value
+        const array = [7, 6, 5, 4, 3]
+        const newa = array.join("+")               // it looks like expression
+        console.log('Join Value', newa);
+    </script>
+
+
+    <!--Reverse-->
+    <script>              // Reverse Function
+        let o = ["World", "New"];
+        o.reverse()
+        console.log('Reverse Function', o);
+    </script>
+
+
+    <!--Slice-->
+    <script>              // Slice Copy the portion of an array        // Syntax: array.slice(start, end);
+        const jr = ["Hello", "Iron man", "super man", "Spider Man"]
+        const part = jr.slice(0, 2)
+        console.log(jr);
+        console.log(part);
+    </script>
+
+
+    <!--Splice-->
+    <script>             //0       1           2                3     // Splice Add or Remove the elements in an array  // Syntax: array.slice(start, deletecount, new array);
+        const vr = ["Hello", "Iron man", "super man", "Spider Man"]
+        console.log('Before Splice', vr);
+        const part2 = vr.splice(3, 1, "Panther", "Black Widow")         // 3 Index Value, 1 has delete count, add condition
+        console.log('After Splice', vr);
+    </script>
+
+
+
+
+    <!--Index Function-->
+    <script>       //0  1  2  3          // index()
+        const kr = [7, 6, 5, 4]
+        const level2 = kr.indexOf(5);         // identify the given data index value or address
+        console.log('Index Function', level2);
+    </script>
+
+
+
+
+    <!--Higher Order Array Method-->
+    <script>
+        const jv = [10, 20, 30, 40]
+        jv.forEach((currentvalue, index, array) => {
+            console.log('Higher Order Array Methods', currentvalue, index)
+        });
+    </script>
+
+
+
+
+    <!-- Map Function -->
+    <script>
+        const arrs = [20, 40, 60]
+        arrs.map((a, i) => {          // callback function 
+            console.log('Map Function', a, i);
+        });
+    </script>
+
+
+
+
+    <!-- Reduce -->
+    <script>
+        const ars = [10, 20, 30, 40]
+        const sum = ars.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log('Reduce Function', sum);
+    </script>
+
+    <script>
+        const arss = ["hello", "world"]
+        const sums = arss.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log('Reduce Function', sums);
+    </script>
+
+
+
+
+    <!--Includes-->
+    <script>
+        const value = [7, 6, 5, 4, "Hello"]  // true or false
+        const level = value.includes("Hello");
+        console.log('Include Function', level);
+    </script>
+
+
+
+
+    <!-- Filter Function-->
+    <script>
+        const newValue = [1, 2, 3, 4]
+        const evenNo = newValue.filter((number) => number % 2 == 0);
+        console.log('Filter Even Numbers', evenNo);
+    </script>
+
+    <script>
+        const oldValue = [1, 2, 3, 4]
+        const oddNo = newValue.filter((number) => number % 2 != 0);
+        console.log('Filter Odd Numbers', oddNo);
+    </script>
+
+
+    <!--Find Function -->
+
+    <script>
+        const age = [14, 15, 26, 28, 32, 44, 56, 66, 75]
+        const found = age.find(element => element > 18);
+        console.log('Find Function:', found);
+    </script>
+
+    <script>
+        const name = ["arun", "bala", "charlie"]
+        const search = name.find(element => element.startsWith("b"));  // with double quotes b it returns undefined
+        console.log('Find Function:', search);
+    </script>
+
+
+     <!-- Map Method-->
+    <script>  // Multiply
+        const math = [1, 2, 3, 4]
+        const double = math.map(num => num * 2);
+        console.log('Single Value:', math);
+        console.log('Double Value:', double);
+    </script>
+
+    <script>  // add +5
+        const five = [5, 10, 15];
+        const add = five.map(n => n + 5);
+        console.log('Constant:', add);
+    </script>
+
+    <script>  // convert number to string
+        const num = [1, 2, 3]
+        const toString = num.map(String);
+        console.log(toString);
+    </script>
+
+    <script>  // convert string to number
+        const locationss = ["1", "2", "4", "chennai", "mumbai", "kolkata"]
+        const toNumber = locationss.map(Number);
+        console.log(toNumber);
+    </script>
+
+    <script>   // count the string 
+        const place = ["chennai", "mumbai", "kolkata"]
+        const newplace = place.map(w => w.length);
+        console.log(newplace);
+    </script>
+
+    <script>  // first letter upper case
+        const word = ["javascript", "react", "express"]
+        const capital = word.map(n => n[0].toUpperCase() + n.slice(1));
+        console.log(capital);
+    </script>
+
+    <script>  // first letter lower case
+        const words = ["JAVASCRIPT", "REACT", "EXPRESS"]
+        const lowercase = words.map(n => n[0].toLowerCase() + n.slice(1));
+        console.log(lowercase);
+    </script>
+
+    <script>   // full upper case
+        const wordz = ["javascript", "react", "express"]
+        const capitalz = wordz.map(wordz => wordz.toUpperCase());
+        console.log(capitalz);
+    </script>
+
+    <script>   // full lower case
+        const wordc = ["JAVASCRIPT", "REACT", "EXPRESS"]
+        const capitalr = wordz.map(wordc => wordc.toLowerCase());
+        console.log(capitalr);
+    </script>
+
+    <script>   // boolean
+        const boolean = [2, 4, 6]
+        const isBig = boolean.map(n => n > 4)
+        console.log(isBig);
+    </script>
+
+    <script>   // Numbers isFinite returns true or false
+        let result = isFinite(123);
+        console.log(result);
+    </script>
+
+    <script>   // String isFinite returns true or false
+        let resultz = isFinite("Hello");
+        console.log(resultz);
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

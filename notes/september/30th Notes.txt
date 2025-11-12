@@ -1,0 +1,28 @@
+CSS Units:
+
+1. px - absolute unit (absolute - do not change)
+2. fixed size - not responsive
+3. 1px - 1 dot on the screen 
+4. % - percentage - relative unit 
+5. Relative to parent element size.
+6. Vh - viewport height, vw - viewport width 
+7. 1vh - 1% of browser height 
+8. 100vh - full screen height 
+9. em - relative to parent font size   spacing, padding, margin 
+   (used for typography element)
+10. 1em - equal to parent font size (relatable)
+11. rem - root element measurement  
+12. background-image: url();
+13. background-repeat: no-repeat; repeat x, repeat y
+14. overflow: hidden; 
+15. background-attachment : fixed;  (Fixed the image, Scroll)
+16. background: url(assets/image/img.jpg) no-repeat #fff; 
+(collection of property value in the same tag) 
+17. Color picker for RGB Code value 
+
+
+
+Source:
+For Image or Slider Purpose: https://picsum.photos/1200/800
+
+

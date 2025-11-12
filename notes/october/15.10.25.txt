@@ -1,0 +1,122 @@
+Comparison Operators:
+
+Functional:
+Property, data are values stored in the process 
+
+For Loop Condition:
+A loop is used repeat the block of code multiple times 
+until a certain condition becomes false. 
+
+Automative repeated task 
+Work with array and list 
+Use for calculations (Math calculations)
+
+Types of Loop
+For loop - When u known how many to times repeat the process 
+           When you know the no. of iterations 
+           Mostly let used in for loop conditions 
+           (Assignment operator, logical, arithmetic, Comparison)
+           (Math Calculations)
+While - When u dont know exact count depend on condition 
+        (Once the condition is true)   
+do while - when u want to run atleast one time before
+           checking the condition 
+
+
+For loop Syntax:  
+for (initialization;condition;increment/decrement){
+
+    //code execution Part
+    //statement
+}
+
+
+While Loop Syntax:
+while(condition){
+    Statements
+    Increment/decrement 
+}
+
+Do while Syntax:
+do {
+    increment/decrement
+}while(condition){
+
+}
+
+
+
+For Loop Conditions:
+ -> lesser than only used in for loop condition   < = lesser > = greater 
+ -> decrement option means use greater than condition
+ -> increment option means use lesser than condition 
+
+ Example:
+    for(let a=0;a<=30;a++){   1,2,3,4,5,6,7,8,9,30
+        console.log(a);
+    } 
+
+Daily Task:
+Do Each for Loop condition 
+
+ While Loop Conditions:
+ -> lesser than only used in for loop condition 
+ -> Runs a block of code as long as the condition is true.
+
+
+Example:
+
+let a = 1;
+while (a<10){
+    console.log(a);
+    a++;
+}
+
+
+let a = true;
+while(a){
+    console.log(a);
+    a=false;
+}
+
+
+
+
+do While:
+->Execute the code blocks atleast once
+
+Example:
+
+let count =10
+
+do{
+    console.log("Running even if it is false");
+    count++;
+}while(count<5){
+    console.log("count");
+}
+
+
+
+
+For Loop:
+
+
+
+
+
+Today Task:
+For Loop Syntax: 18 times 
+Console.log (a+1) // Arithmetic conditions 
+While loop Syntax : 12 Times 
+Do While Loop Syntax: 12 Times 
+
+
+Task:
+
+for(let i=5;i>=1;i--){  // i greater than equal to, i decrement 
+        console.log(i);
+    }
+for(let i=1;i>=5;i++){  // i greater than equal to, i increment 
+        console.log(i);
+    }

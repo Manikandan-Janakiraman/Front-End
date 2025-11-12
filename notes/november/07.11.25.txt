@@ -1,0 +1,94 @@
+Local Storage / Session Storage / Cookie Storage
+
+MVP
+Minimum viable product - small Prototype
+
+Local Storage:
+-> build in web storage API 
+-> store key value(object value) data in the browser permanently
+-> data states even browser reload or closed 
+-> Never expire until manually cleared.
+-> 5MB capacity
+-> js only access the space
+-> Permanent 
+-> do not send data from local storage to server
+-> only accept the text format (json)
+
+(under Application -> local/session/Cookie)
+
+Cookie Storage:
+
+-> A cookie is a small piece of data
+-> data storage capacity 4kb 
+-> send data to server 
+-> tracking and authentication and sessions
+-> key value pair 
+-> Expiry date for cookie by the user 
+-> only https available 
+
+
+Session Storage:
+-> temporary web storage
+-> object provided by browser
+-> stores data only for 1 tab 
+-> once you close the tab or browser data delete automatically
+-> Multi step form 
+-> handle the temporary data 
+-> based on session we insert print names
+-> temporary key value storage object in browser
+-> data exists only until the tab or browser window closed 
+-> used to store short term user data secured on the client side 
+-> SESSION storage mostly used in PHP 
+
+
+Difference         Local              session                    cookie 
+Storage size:   5 to 10 MB            5MB                      4kb 
+                until manually       tab closed              configurable expiry date 
+send the data       no                no                         yes
+                                                         client & server 
+datatype          string             string                     string 
+security            safe              safe                     risky 
+usecase          all places       temporary tab data         authentication & tracking 
+
+
+
+
+LOCAL Storage: 
+
+
+
+Task:
+Local Storage 
+    Add form:
+        Recent problems 
+        Name
+        Mobile No
+        Problem 
+        where its happen (city)
+        How do you know
+        Review 
+        Submit Button
+
+        Table format - all data stored in table format 
+
+
+get data from local storage:
+const userdata = JSON.parse(localstorage.getItems("userdata"))|| []
+const store = {user,mobile,email,passowrd}
+usersdata.push(store) 
+
+localSttorage.setItems("userdatas",)
+
+from one page to another page 
+window.location.href = "login.html"
+
+
+getITems - get the data 
+setItems - set the data 
+
+value.trim() - remove the space from front and back 
+
+const data = dataparse.find((u)=>u.email === email && u.password === password) 
+
+
+Register 

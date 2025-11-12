@@ -1,0 +1,66 @@
+Form Handling:
+
+REST Operator:
+const add = (....a)=>{
+    console.log(a)
+}
+let input = [1,2,3,4,5]
+add(...input,2,3,4,5)
+
+
+
+Async Process:
+
+Synchornize Process:
+In Synchornize programming code executes line by line (one after another)
+Each line must finish before the next line start 
+It means a single line executes take more time than the rest of the code will wait 
+
+
+Asynchronize Process:
+In Asynchronize process some task runs independently or else parallelly without blocking other code 
+execution 
+
+Handle Methods:
+1. closure
+2. callback
+3. promises -> fetch, Async await, promise chaining, .then function 
+
+set time out, set interval
+Non blocking behaviour 
+
+set timeout:
+Its a function, runs a function once after a delay. 
+
+callback function:
+setTimeout((=>{}, time)) 
+
+1000 = 1 millisecond 
+3000 = 3 millisecond 
+1lakh = 1 minute 
+
+setinterval:
+it also function, runs a function repeatedly every given interval 
+
+
+
+Task:
+setinterval setTimeout Syntax - 18 times 
+
+const data = setInterval(()=>{
+
+},1000)
+
+
+const data = setTimeOut(()=>{
+
+},1000)
+
+
+3 clock wakeup
+Bath 
+equipments
+shop cleaning process 
+Food preparing 
+List of product 
+sale to customer 

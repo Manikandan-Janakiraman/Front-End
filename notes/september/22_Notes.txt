@@ -1,0 +1,38 @@
+Div:
+    
+
+Table:
+    Data should be shown clearly in rows and columns.
+    Structured the date 
+        Example: Student details, employee details 
+
+
+<table>
+    <!-- Main containter -->
+   
+    <th></th>
+    
+    <tr></tr>  <!-- table rows -->
+    <td></td>  <!-- table datas -->
+
+    <!-- tbody --> Make your data listing container 
+    
+</table>
+
+Cellspadding - Space inside the Cell 
+Cellspacing - Between the cell 
+Colspan - one cell should cover multiple columns 
+rowspan - one cell should cover multiple rows 
+
+
+1. File Handling - Move one file to another file adding the images to the webpage. 
+2. Tags - Root - Container - Child - Elements - Webpage - Website 
+    Attribute - Local & Global Attribute 
+3. Semantics - SEO - Browser understand develop comfortable 
+4. Containers div, block level, Inline 
+5. Form - Elements 
+6. Table 
+
+
+Form - Valid table for college application form 
+Table 

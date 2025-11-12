@@ -1,0 +1,115 @@
+Destructuring:
+-> Extracting values from array or objects and storing them into Variables easily
+-> helps to unpack array or object data into separate variables in a clean way 
+
+Array Destructuring:
+
+const a = ["React", 2025,"ES6"]
+const [name, year, method] = a     // Destructuring Method in array 
+console.log(name);
+
+Object Destructuring:
+
+const obj = {name:"react", year:"2025", methods:"ES6"}
+const {name, year, methods} = obj
+console.log(name);
+
+
+Spread Operator:
+-> Used to copy or merge arrays and objects 
+-> Spread Operators are unpacking the elements or unzip the elements from the arrays
+and objects.
+
+array example:
+const newarray = [1,2,3]
+const Spreadarray = [...newarray,2,3,4,5]
+console.log(Spreadarray);
+
+
+const newarray = [1,2,3]
+const spretarray = [...newarray]
+const [first,...datas] = newarray 
+console.log(datas) 
+
+
+object example:
+const newarray = {name:"React"}
+const Spreadarray = {age:"new"}
+console.log({...newarray,...Spreadarray});
+
+
+REST Operator:
+-> used in function parameters to group remaining arguments into an array then 
+when you don't know exact how much of datas come as an arguments we can use the 
+rest operator. Only you can define rest operator in function parameters. 
+
+
+    Example:
+        const datas = ()=>{
+            return a+1
+        }
+        console.log(datas(1,2,3,4));
+
+        const datas = ()=>{
+            return a.reduce((total,e)=>total+e)
+        }
+        console.log(datas(1,2,3,4));
+
+
+        const datas = ()=>{
+            const datasnew = a.filter((e)=>e%2 === 0)
+        }
+        console.log(datas(1,2,3,4));
+
+
+        const a = "React"
+        const letters = [...a]
+        console.log(letters)
+
+
+TASK:
+1. 10 datas in object creation {} Using DOM function innerHTML destructuring
+to print separately.
+2. 10 datas in array creation [] Using DOM function innerHTML destructuring
+to print separately.
+3. Spread Operator using array each data split and print.
+4. Arguments : find, filter, reduce, map, for each 
+
+Form Validation :
+Regular Expression: 
+
+
+Selector, Property - 24 times 
+
+Selector, 
+property.innerHTML 
+        
+        
+client side rendering
+client side validation 
+
+string.length 
+
+must be 10 characters 
+
+minimum length 
+
+
+
+Navbar:
+Center card Indian tradition 
+Indian tradition banner 
+SEarch options box 
+Submit button process 
+
+Indian (tamil, telugu, kannada) list of books, 
+1 row cards 4 responsive 2
+2 row card 4
+
+vertical banner add your tamil quotes with button 
+onclick button form 
+name, mobile book quotes & name and image 
+array store 
+
+
+button - > form (modal)

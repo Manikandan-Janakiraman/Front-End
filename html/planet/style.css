@@ -1,0 +1,125 @@
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+.carousel-caption h5 {
+    font-family: 'Lucida Sans', sans-serif;
+    color: white;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 8px 1rem;
+    position: sticky;
+    color: #181818;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.nav-link:hover {
+
+    color: #871919;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.infrastructure {
+    display: block;
+    width: 100%;
+    background-image: url(img/banner/7.jpg);
+    background-size: cover;
+    padding: 85px;
+}
+
+.education {
+    display: block;
+    width: 100%;
+    background-image: url(img/banner/10.jpg);
+    background-size: cover;
+    padding: 105px;
+    
+}
+
+.content p,
+li,
+ul {
+    color: white;
+    font-size: 18px;
+}
+
+.people {
+    display: block;
+    width: 100%;
+    background-image: url(img/banner/5.jpg);
+    background-size: cover;
+    padding: 105px;
+    
+}
+
+.education {
+    display: block;
+    width: 100%;
+    background-image: url(img/banner/education.jpg);
+    background-size: cover;
+    padding: 105px;
+    z-index: 0;
+}
+
+.food {
+    display: block;
+    width: 100%;
+    background-image: url(img/banner/13.jpg);
+    background-size: cover;
+    padding: 105px;
+    
+}
+
+.hospitals {
+    display: block;
+    width: 100%;
+     background-image: url(img/banner/hospital.jpg);
+    background-size: cover;
+    padding: 105px;
+    
+}
+
+.Agriculture {
+    display: block;
+    width: 100%;
+    background-image: url(img/banner/4.jpg);
+    background-size: cover;
+    padding: 105px;
+    
+}
+
+.law {
+    display: block;
+    width: 100%;
+    background-image: url(img/banner/laws.jpg);
+    background-size: cover;
+    padding: 105px;
+    
+}
+
+.transport {
+    display: block;
+    width: 100%;
+     background-image: url(img/banner/1.jpg);
+    background-size: cover;
+    padding: 105px;
+    
+}
+ul.nav.justify-content-center {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index:1;
+}
+
+.container-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,193 @@
+CSS:
+Flex, padding, color, background, box, grid, dashboard, media screen, margin, width, height, text-transform, transition, grid
+
+Environmental Setup: 
+To insert the cdn link and other libraries or classes from the Bootstrap or tailwind.css called Environmental setup. 
+
+Bootstrap:
+> Predefined libraries
+> Open source front end framework used for developing responsive and mobile first website
+> Provide html, css, Javascript based design template for Building modern consistent and flexible ui component like button, forms
+  navigation bar and layouts 
+> Responsive design fast development consistent and community support
+> Its also an API (Application Programming Interface)
+
+Typography, blockquote, Images (rounded float-start, float-end), Table.
+Forms: Label, input, columns, row, select, layout, Wrapping, validations 
+Checkbox, Radiobutton 
+
+Component: Accordion,Button, breadcrmb, card, carousel, alert, Navbar
+
+Utilities:
+flex 
+float
+Overflow
+position
+background
+Interaction
+shadows
+
+Cards:
+Flex and Grid
+
+Container:
+container-fluid = full width 
+split the screen = 12 columns 
+
+
+
+(/\s+/g, '') Meaning:
+When used together in a function like str.replace(/\s+/g, ''),
+the code efficiently removes all spaces, tabs, and newlines from the variable str.
+
+
+
+
+TASK:
+Make a Responsive grid for split the screen and give the images
+make a flex using banners like we see in the class
+Make a cards using flex 
+Read the bootstrap classes and name. 
+
+
+Lexical Scope & closure function:
+
+const outer = ()=>{           // function within a function
+    let a = 10;
+    console.log('Data', a); 
+    const inner =()=>{
+        a++ 
+        console.log('Data', a); 
+    }
+    inner()
+}
+outer()            // outer function 
+
+Get the outer function output access in the inner function to get the output.
+
+
+function declaration
+anonymous
+arrow function
+promise
+set time
+async wait 
+
+
+
+
+
+# Day 32 - Introduction to Bootstrap
+
+## Learning Objectives
+By the end of this session, you should be able to:
+1. Understand what Bootstrap is and its advantages.
+2. Utilize Bootstrap containers effectively.
+3. Implement the Bootstrap grid system.
+4. Leverage Bootstrap typography and utility classes.
+
+---
+
+## 1. Introduction to Bootstrap
+
+### What is Bootstrap?
+Bootstrap is an open-source front-end framework for developing responsive, mobile-first websites. It includes HTML 
+and CSS-based design templates for typography, forms, buttons, navigation, and other interface components.
+
+### Advantages of Bootstrap
+- **Responsive**: Easily create layouts that adapt to various screen sizes.
+- **Customizable**: Can be tailored to meet specific project requirements.
+- **Pre-styled Components**: Offers ready-to-use component styles which speed up the development process.
+
+---
+
+## 2. Bootstrap Containers
+
+### Understanding Bootstrap Containers
+Containers are the fundamental building blocks of Bootstrap's layout system. They help in aligning and padding your content.
+
+### Types of Containers
+- **`.container`**: Fixed-width responsive container. Width changes with the size of the viewport.
+- **`.container-fluid`**: Full-width container, always spans the entire width of the viewport.
+  
+### Example
+```html
+<div class="container">
+  <h1>Hello, Bootstrap!</h1>
+</div>
+
+<div class="container-fluid">
+  <h1>Hello, Full Width Bootstrap!</h1>
+</div>
+```
+
+---
+
+## 3. Bootstrap Grid System
+
+### Understanding the Grid System
+Bootstrap's grid system allows you to create complex layouts using row and column classes. The grid is based on Flexbox.
+
+### Key Points
+- **12-column layout**: Bootstrap divides the screen into 12 equal columns.
+- **Responsive breakpoints**: The grid adjusts to different screen sizes (e.g., xs, sm, md, lg, xl).
+
+### Example
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">Column 1</div>
+    <div class="col">Column 2</div>
+    <div class="col">Column 3</div>
+  </div>
+</div>
+```
+
+---
+
+## 4. Typography & Utilities
+
+### Bootstrap Typography
+Bootstrap offers predefined classes to style text effectively.
+
+#### Common Typography Classes
+- **Headings**: Use `<h1>`, `<h2>`, etc. with utility classes.
+- **Text Utilities**: Classes like `.text-center`, `.text-muted`, etc.
+
+### Example
+```html
+<h1 class="text-primary">Primary Heading</h1>
+<p class="text-muted">Muted Text Example</p>
+```
+
+### Bootstrap Utility Classes
+Utilities provide common styles that can be applied to elements without needing custom CSS.
+
+#### Examples of Utility Classes
+- **Margin and Padding**: `.m-3` adds a margin, `.p-3` adds padding.
+- **Display**: `.d-flex`, `.d-none` for manipulating visibility and layout.
+
+### Example
+```html
+<div class="m-3 p-3 bg-light">This is a box with margin and padding.</div>
+```
+
+---
+
+## Preparation Steps for Learning
+
+1. **Familiarize with HTML & CSS**: Prior knowledge will make learning easier.
+2. **Set Up Your Environment**: Have a code editor like VSCode or Sublime Text ready.
+3. **Install Bootstrap**: Include Bootstrap's CSS and JS in your HTML file.
+   ```html
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+   ```
+4. **Hands-on Practice**: Create a simple webpage using the grid system, typography, and utilities.
+5. **Explore Documentation**: Refer to the [Bootstrap Documentation](https://getbootstrap.com/docs/) for additional features and examples.
+
+---
+### Conclusion
+Bootstrap provides a robust framework for creating responsive web designs efficiently. Understanding its containers, grid system,
+ typography, and utility classes is essential for modern web development. Happy coding!

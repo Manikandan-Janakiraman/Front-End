@@ -1,0 +1,36 @@
+Array:
+
+for loop - Collection of data collection
+
+array -[]
+Collection of values or datatypes are called as array.
+Reference - function, object
+
+->Temporary store datas in the arrays 
+
+Array Loping
+
+NEsted for loop
+
+for(let firstline = 1; firstline<=5;firstline++){
+
+}
+
+
+
+TASK 1:
+Crate a array and loop the array and do some math calculations.
+
+TASK 2:
+Using for loop for arrays 
+
+TASK 3:
+Nested Lop using 2 loops and print and check what is the logic and using 3 loops and checking
+What is the output.
+
+Creation Phase:
+Update Phase:
+Optimize Phase: 
+
+
+rgb(255, 247, 210, 0.7) transparent

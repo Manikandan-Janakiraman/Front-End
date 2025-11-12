@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM Super Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(img/banner.jpg);
+            width: 100%;
+            height: 94vh;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Javascript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">DOM Basics</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background">
+
+    </div>
+
+
+    <script>
+
+        const products = [
+            { name: "Carrot", category: "vegetables", price: "30" },
+            { name: "Beetroot", category: "vegetables", price: "25" },
+            { name: "Tomato", category: "vegetables", price: "50" },
+            { name: "Potato", category: "vegetables", price: "30" },
+            { name: "Brinjal", category: "vegetables", price: "25" },
+            { name: "wheat", category: "grains", price: "55" },
+            { name: "rice", category: "grains", price: "75" },
+            { name: "cereals", category: "grains", price: "45" },
+
+        ];
+
+
+        console.log("List of Products");
+        for (let i = 0; i < products.length; i++) {
+            if (products[i].category === "vegetables") {
+                console.log(`vegetables: ${products[i].name} - Rs.${products[i].price}`);
+            } else if (products[i].category === "grains") {
+                console.log(`grains: ${products[i].name} - Rs.${products[i].price}`);
+            }
+        }
+
+        const orderItems = [
+            { name: "rice", quantity: 2 },
+            { name: "cereals", quantity: 3 },
+            { name: "Tomato", quantity: 1 }
+        ];
+
+
+        let i = 0;
+        let grandTotal = 0;
+
+        console.log("----- Your Order -----");
+        while (i < orderItems.length) {
+            const product = products.find(p => p.name === orderItems[i].name);
+            if (product) {  
+                const itemTotal = product.price * orderItems[i].quantity;
+                grandTotal += itemTotal;
+                console.log(`${product.name} x${orderItems[i].quantity} = Rs.${itemTotal}`);
+            }
+            i++;
+        }
+
+        console.log(`Grand Total: Rs.${grandTotal}`);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+CSS Advanced Concepts
+
+Pseudo Elements:
+    -> Define special state of an element
+    -> Any Action in webpage the Pseudo classes give you the client to intractive
+
+Syntax:
+selector:pseudo class {
+    property:propertyvalue;
+}
+
+Hover, active, focus, visitied, first-child, last-child, :nth-child(n)
+
+Positions:
+ -> When you have a elements, to showing on the anywhere in the webpage we need to using Positions
+
+ Types:
+ static - default value of elements in the webpage
+ absolute - not change the Position value (Not dependent) 
+ relative - relative is all the time depending on the absolute value or elements 
+ fixed - fixed values once you give the value of fixed it will be fixed to the screen 
+ sticky - We give the measurement of the height and weight when the fixed element enable on the screen.
+
+ Top, bottom, left, right 
+
+Z-Index: (Important)
+ -> Define the stacking order of element (Front or Back)
+ -> Controls which element appear on top of another when elements overlap 
+ -> Works in position property only 
+
+
+
+Task:
+What is Pseudo Classes?
+What is Pseudo Elements?
+Difference?
+Syntax?
+Usages?
+When we using this all our webages?
+List out the webpages?
+
+What is position - What is absolute, relative, sticky, fixed, static 
+Difference absolute, relative, sticky, fixed
+
+Z- index:
+What is z-index? 
+When and Where we use z-index?
+
