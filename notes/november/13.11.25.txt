@@ -1,0 +1,261 @@
+React:
+-> Environment 
+-> Reusable components, Virtual DOM, ReactDOM, Library 
+-> Code length Short
+-> Syntax short 
+-> ES6 Features implemented in react 
+
+What is React?
+    JavaScript Library
+    Developed by Facebook called Meta.
+    To Build user interfaces.
+    Especially for single page applications (spa)
+    Mainly used to build reusable ui.
+    Component based architecture.
+    Maintain Multiple dynamic process in single component.
+    Declarative Component based front end libraries for building fast, dynamic and scalable web applications.
+
+Why React?
+    Js Speed process so we use virtual dom for fast updates.
+    No full reload the whole page 
+    App is divided into small reusable components.
+    1 way data flow 
+    We can make debugging and data tracking easier 
+
+Declarative 
+    You just tell what to render not how to render 
+    react handles the dom updates
+    community setup in react (huge ecosystem of packages and libraries)
+    cross platform (react native for mobile, react for web)
+    stable code (user downward data flow) fewer thing process in side effect 
+
+    side effect: if we use third party data any error happen
+
+prerequisite:
+    Core Js (var, let, const, function, hoisting, arrow function)
+    Advanced js (async await, callback, promises, fetch)
+    Array (destructuring, spread operator, array methods(filter, reduce, find))
+    Scope (lexical, closure, global and local variables)
+
+ES6 Features:
+    Modules (export/ import)
+    Template Literals
+    Ternary operator
+
+DOM
+    Manipulative element
+    Event listener
+    Event Handling
+    Form handling 
+
+JSON (javascript object notation)
+    Notation (symbol)
+    Convert data into data parse, stringfy
+    Local & Sesssion storage
+    data handling without backend
+
+React build purely in javascript understanding the js deeply means you can master react faster.
+
+
+
+Install Node.js
+
+Git command
+    node -v  version v22.19.0
+
+
+Node:
+
+JS:
+    handling only in browser (v8 Engine)
+
+React:
+    simple and speed
+
+HTML: WEbsite - HTML inside - js - browser Read 
+React: website - js inside html means (jsx) - js read - browser bable compiler 
+
+jsx - javascript xml 
+    syntax extension for javascript that allows writing html inside js. 
+    compile and run 
+    pure js code 
+
+    xml have rules to process the code 
+    html do not have rules to process the cde 
+
+
+Bable compiler
+    Convert modern es6 + jsx into older js (es5)
+    es5 only browser understands 
+    not all browser understand the modern javascript 
+    translate them into compatible code 
+
+V8 Engine & React
+    Google open source engine used in chrome and node js
+    compile to machine code for fast execution
+
+    REact build on pure js
+    the browser uses the v8 engine to run the code efficiently
+    so all your jsx file go to bable and bable convert into js 
+
+
+Environment Setup:
+CRA - React 3+ -> Basic and minimal project (webpacks bundle together)
+Create React App - CRA 
+
+
+    Commands:
+        npm - node package manager 
+                run the Installation process in c drive and folder drive.
+
+        npx - node package execute
+                run the Installation process only in the folder 
+                create-react-app projectname 
+
+
+
+Command prompt:
+
+cd frontend
+npm start
+
+Default react: 
+localhost:3000
+
+server stop ctrl + c 
+
+
+
+VITE - React 4+ -> Big project, efficient, and packages for app creation  (Roll up method ES6 Build) 
+VITE - fast and efficient 
+
+    Commands:
+
+        npm create vite@latest projectname 
+
+        npm create vibe@latest vitefrontend
+            REact
+                javascript
+                    Rolldown Yes/No
+                        npm start yes/no 
+        
+        
+       localhost:5173
+
+        server stop Ctrl + c 
+
+    
+
+
+
+TASK 1 to 6:
+1. Difference between html webpage & react using webpage?
+2. Difference between angular & react?
+3. What is Typescript?
+4. What is variable, declaration, initialization, lexical scope, block scope, function scope, hoisting, closure? 
+5. In webdevelopment process why node is coming?
+6. Which one is come first node, angular or react?
+
+Task 7:
+    Vite project - create project 
+        List of files and folder 
+
+    CRA project  - create project 
+        List of files and folder 
+
+
+IN CRA Project name - frontend1:
+
+    node_modules - 879 modules
+    public - favicon, index.html, logo.png, manifest.json, robots.txt 
+    src - app.css, app.js, app.test.js, index.css, index.js, logo.svg, reportwebvitals.js, setupTest.js
+    gitignore
+    package.json 
+    package.lock.json 
+    readme.md 
+
+
+IN VITE Project name - vitefrontend:
+
+    node_modules - 124 modules 
+    public - vite.svg 
+    src - assets, app.css, app.jsx, index.css, main.jsx 
+    gitignore
+    eslint.config.js
+    index.html 
+    package.json 
+    package.lock.json 
+    readme.md 
+    vite.config.js 
+
+
+
+
+React:
+What
+React (aka React.js) is a JavaScript library for building user interfaces using reusable components.
+It renders UI efficiently with a virtual DOM and lets you declare what the UI should look like for any app state.
+
+Why 
+React makes complex UIs easier to build and maintain by breaking the interface into small, reusable components.
+Its performance (virtual DOM) and large ecosystem (hooks, tooling, libraries) speed up development and scaling.
+
+Where
+React is used in web applications (single-page apps), hybrid mobile apps (with React Native), and component libraries.
+You'll find it in dashboards, e-commerce sites, admin panels, and many production apps from startups to large companies.
+
+When
+Use React when you need interactive, state-driven UIs, reusable components, or to manage frequent UI updates.
+Avoid it for tiny static pages where plain HTML/CSS (or simpler libraries) would be faster and lighter.
+
+How
+Install React via npm/yarn (create-react-app, Vite) and build UI with components, props, state, and hooks (e.g., useState, useEffect).
+Compose components, manage state locally or with libraries (Redux/Context/MobX), and render to the DOM with 
+ReactDOM.createRoot(...).render(...).
+
+Variables Behaviour:
+var - Reassign, redeclare, initialize 
+let - Reassign, initialize (do not redeclare) 
+const - initialize 
+
+Object {}:
+Collection of related data and/or functionality.
+structuring and organizing information.
+
+Nested Object {{}}:
+Object within object
+
+Array []:
+array are stored in specific order 
+
+Array of Object [{}]:
+Store collection of data, each data represents as objects parse, stringfy 
+
+Dot Notation (Symbol):
+access an object's properties, methods, or nested data 
+
+Types of  function:
+name function syntax:
+(){
+
+}
+
+anoymous syntax:
+const variable = (function(){
+
+})
+
+arrow Syntax:
+()=>{
+ 
+}
+
+Array function:
+pop -  removes the last element from an array. Last In First Out
+push - adds one or more elements to the end of an array. 
+
+call back function (){} 
+passed an argument to another function execute later.
+
+closure:
+Combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment)
