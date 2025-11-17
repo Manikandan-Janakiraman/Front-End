@@ -1,0 +1,200 @@
+IN CRA Project name - frontend1:
+
+    node_modules - 879 modules (libraries, build in function, third party function)
+    public - favicon, index.html, logo.png, manifest.json, robots.txt 
+    src - app.css, app.js, app.test.js, index.css, index.js, logo.svg, reportwebvitals.js, setupTest.js
+    gitignore
+    package.json 
+    package.lock.json 
+    readme.md 
+
+
+IN VITE Project name - vitefrontend:
+
+    node_modules - 124 modules 
+    public - vite.svg 
+    src - assets, app.css, app.jsx, index.css, main.jsx 
+    gitignore
+    eslint.config.js
+    index.html 
+    package.json 
+    package.lock.json 
+    readme.md 
+    vite.config.js 
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+    <App />
+    </React.StrictMode>
+)
+
+reportwebvitals();
+
+strick mode - generate developer app 
+class - className
+href - linkto 
+App - Entry File 
+
+CRA:
+Index.html  ----> index.js ----> App.js 
+
+
+VITE:
+main.jsx ---> app.jsx
+
+
+
+React :
+    React base itself = component based architecture.
+    component = reusable ui and process, logic, and styling inside the single small unit of function
+    called component.
+    Components are reusable.
+    When u make a component the component name must be first letter capital.
+    Each component have their own logic and style.
+    In your project wherever you can make a single component use it in many places
+    header, footer, login form, cart products.
+    Component are building blocks of your project or website.
+    Component is a small piece of ui and logic.
+    We can maintain dynamic component and static component.
+
+Two types of component:
+    function component - modern react standard
+    class component - use it before 2020 (large codes, not syntactic, understand is difficult)
+
+
+Real Dom:
+    Raw Html File 
+    browser directly update the ui 
+
+react handle virtual DOM
+    react creates a copy of dom memory
+    light weight js object 
+    react updates virtual dom compares with previous snapshoot (diffing algorithm) 
+    applies only that to real dom (reconciliation) 
+
+Why Virtal DOM is faster
+    React update only the required path not the full page thatswhy lightning fast performance.
+
+
+PROCESS:
+
+vite --> package.json --> in path cmd prompt --> npm run dev = react start
+localhost:5173
+
+Inside App.jsx:
+    Filename as same as component - capital letter 
+
+Tree structure: Parent--> Child--> child 
+
+Code part:
+
+    const App =()=>{
+        return(                     3 symbol (fragment)
+        <div>
+        This is App 
+        </div>
+        )               
+    }
+    export default App;  // 
+
+
+    export const Button =()=>{  // named export 
+
+    }
+
+
+    fragment tag - <> </> 
+        Empty Div 
+
+
+    const App =()=>{
+        return( 
+        <>                                 // fragment tag has empty parent used for multiple child to work
+        <div>
+        This is App 
+        </div>
+        <div>
+        This is App 
+        </div>
+        </>
+        )               
+    }
+    export default App;  // 
+
+
+
+logial coding - above the return statement
+html code - below the return statement or inside the return function 
+
+<header/>        -  calling function import 
+ctrl space to import the component 
+
+<header></header>
+
+
+import header from "./components/Header";
+import header, {Button} from "./components/Header";
+
+export default
+export function - call named export 
+
+Code:
+
+import header, {Button} from "./components/Header";
+
+const App =()=>{
+
+    return(
+        <>
+        <h1>this is file</h1>
+        <Header/>
+        <Button/>
+        </>
+    )
+}
+
+
+Export Function:
+
+Name export call means we have import the libraries like below line 
+import {NavBar} from './component/NavBar/'
+
+ export const Button =()=>{  
+        return (
+            <>
+            <div>
+            <Button>Register </Button>
+            </div>
+            </>
+        )
+    }
+
+
+
+
+TASK:
+
+REACT Project:
+
+App PAge:
+    Chennai 
+    Kerala
+    Karnataka
+
+Componenets:
+    Chennai 
+        NavBar 
+            IT companies   
+                Robotics 
+    Kerala  
+        Festival
+        Tourism               
+            Important places with component 
+    
+    Karnataka
+        Cinema component 
+            Love story, action story, most watched movies 
+        Traditional 
+            Important Traditional events 
