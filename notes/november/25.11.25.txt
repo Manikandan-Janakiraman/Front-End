@@ -1,0 +1,28 @@
+Await
+.then function 
+useEffect
+
+Props 
+-> Props stabds for Properties 
+-> Data sent between parent component to child component 
+-> Cannot process the data globally 
+-> Props are immutable
+-> passing data from a parent component to a child component
+-> You can't change the props in child component 
+-> Props are arguments passed into React components.
+-> Props are passed to components via HTML attributes. 
+
+
+"Prop drilling" (likely the intended term for "propstilling")
+useContext
+useLocation
+
+Task:
+Parent component - string, number, array of object, array 
+
+
+React Topics:
+useEffect
+Router
+Props (Array of object, object)
+State  

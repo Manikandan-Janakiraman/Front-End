@@ -1,0 +1,41 @@
+useContext:
+
+
+Interaction -> One Event -> Function -> State Trigger -> UI Update 
+useEffect -> Function -> State Trigger -> UI Update 
+
+
+Events: 
+onFocus, onKeyup, onkeydown, onClick, onSubmit, onChange
+
+When you use a form need to take a data from the input, select, form you need to use event object 
+Every input function 
+
+const takedata = () => {
+
+}
+
+
+
+Today Task 
+Form using React
+
+Institute :
+    Name
+    address
+    Mobile
+    Reviews 
+        syllabus upgraded yes or no
+        recent syllabus yes or no 
+        Pracitcal process yes or no 
+        infrastructure type text 
+        Overall Reviews
+    Personal Information
+        Name
+        Mobile 
+        Email 
+
+Store in local storage process and view as a fancy cards 
+
+
+

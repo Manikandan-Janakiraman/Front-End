@@ -1,0 +1,87 @@
+React :
+
+Navigation Process 
+
+React Router DOM:
+-> Third party Library
+-> SPA single page applications 
+reload process Page switching without refresh that is the only thing we are using react router DOM 
+
+1. Navigation 
+2. Url mapping
+3. Page switching without refresh
+4. Dynamic routing
+5. Nested Routing 
+6. Producted Rules 
+
+-> we used url component mapping easily
+-> seo friendly
+-> SPA behaves 
+-> protected rules 
+
+command prompt
+npm i react-router-dom 
+to check go to package.json 
+
+Important ES6 component:
+
+BrowserRouter - Route wrapper for enabling routing 
+Routes - contains all routes definitions 
+Route - Mapping url for component 
+Link - Navigation without refresh (replace for anchor tag)
+useNavigate - Redirect programmatically 
+useParams - read Dynamic values from url 
+outlet - to render nested childhoods 
+navigate - auto redirect 
+useLocation - get current location have path 
+
+
+
+Page - Collection of Multiple component has a page or website 
+        Collection of websites has browser 
+
+Folder Name (Upper Camel Case) : HomePage.jsx 
+
+In main.jsx file 
+<BrowserRouter>
+<App />
+</BrowserRouter>
+
+Name function:
+impot { BrowserRouter } from 'react-router-dom' 
+
+
+
+Given Data:
+
+const links = [{link:"Home", link:"About", link:"Product"}]
+
+{links.map((e, i)=>(
+    <Link to={e.link} key={i+1} {e.link}></Link>
+))}
+
+normal string = "" inside the double quotes
+attribute - to 
+
+
+
+{/* Route */}
+
+Routes:
+Mapping the url 
+
+<Routes>
+<Route path ='/' element={<HomePage>} />
+<Route path ='/about' element={<about>} />
+</Routes>
+
+
+
+Task: 
+React Router DOM 
+Link 
+
+Each Button have function onclick 
+const functionname = ()=>{
+    a+b 
+}

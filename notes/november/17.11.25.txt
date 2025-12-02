@@ -1,0 +1,48 @@
+File Handling
+
+Components 
+Making the FS component - Multi component
+
+Images 
+Image Types: 
+Relative: path file (public)
+Static : path file(src/) cannot change 
+
+image path file public folder 
+
+
+<img className="image.jpg" src={}></img>
+
+
+
+
+
+
+
+
+
+Project Creation:
+In command prompt
+npm create vite@latest projectname 
+
+
+CSS 
+
+small applications:
+
+rafc - shortcut for arrow function
+<banner/> --  control + space
+Index.css --- bootstrap
+
+
+
+
+
+
+
+
+
+
+
+
+Task:

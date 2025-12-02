@@ -1,0 +1,85 @@
+Login Process
+
+
+useNavigate() - for navigation 
+
+For local storage check 
+console:
+    localStorage.users
+
+
+
+Local Storage:
+    String (string in database, convert it into object) 
+        -> JSON.Parse (Use json parse to convert)
+            -> Use find method  
+
+    object to string JSON.Stringify
+
+JWT Token 
+
+List of Commands:
+Code .
+ctrl + c 
+rafce - arrow function 
+
+
+TASK:
+Login Form
+Register Form 
+Dashboard 
+
+with Validation check like mobile no 10 nos only, emails
+
+
+
+SQL:
+Structured Query Language
+
+Use to store manage, retrieve data from relational database 
+object relational mapping (ORM)
+use Query to manage the datas 
+
+SQL is standard Language rdbms system 
+RDBMS - Relational Database Management Systems 
+    
+RDBMS:
+    SQL server
+    Mysql
+    PSQL 
+    Oracle
+    Wamp 
+
+Data is organised and Structured table 
+
+Relationship between table for removing duplicates easily, it is high secured.
+ACID properties Automicity Consistency Isolation Durablity  
+Backup and Restore Support
+
+SQL Commands are grouped into 5 major types
+    DDL -> Data Definition Language (database and table handle)
+            used to define add, change or modify the data
+            Create | Alter | Drop | Truncate | Rename | Change 
+
+    DML -> Data Manipulation Language
+            used to modify rows inside the table 
+            Insert | Delete | update
+
+    DQL -> Data Query Language
+            used to fetch the datas (retrieve) from the database, using single line comment 
+
+    Joins -> join the table (2 or more)
+            inner join, left join, right join, full join
+
+    Constraints -> using data accuracy and validity
+            Primary Key, Foreign Key, Unique, Not Null, check, default 
+
+    TCL -> Transaction Control Language
+    DCL -> Data control Language
+
+
+Sub queries:
+    Filter (Nested Query)
+
+Built in function in SQL 
+    sum, every, count, average

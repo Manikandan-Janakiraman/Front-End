@@ -1,0 +1,73 @@
+Closure
+Var & State
+Function Call
+useEffect 
+
+
+React - Reusability
+
+Closure:
+1 state - 1 interaction
+1 state = 2 interaction
+1 state = 3 interaction 
+
+Why state use in react:
+variable not run or visible in screen, so we use the state method to do the process.
+
+
+Advantage:
+callback function will write within a button, div tags etc 
+example: <button onClick={}>Click Now </button>
+
+
+return - within return function only html tag
+above return - only for logical function and callback 
+
+strict mode -  developer function
+
+sideeffect 
+
+DOMContentLoaded Event:
+    useEffect - wehn you have a open function or statement function when your browser sideeffect control 
+                used fro statement or expression
+
+                useEffect(()=>{
+                    console.log('this function is running whenever your component is rendering)
+                },[dependency])
+
+
+useEffect(()=>{},[dependency])
+
+
+    -> For handling the sideeffect of use State and API calls 
+    -> We use useEffect for initiate function call based on dependency.
+    -> When every component is render your useEffect also render initiate action based on dependency.
+
+
+React Lifecycle:
+    -> componentDidMount
+    -> componentDidUpdate                
+    -> componentWillUnMount
+
+
+State is a asynchronous process 
+
+Immediate Invoke Function expression IIFE
+(()=>{
+
+})()
+
+[] - Empty dependency
+    It is Empty dependency the effect will running single time.
+    Without dependency any other unrelevant state running that time effect 
+    With dependency - whenever your dependency updated your effect will running.
+
+Features: Without dependency, Empty dependency, With dependency 
+
+
+Shortcut:
+rafce 
+
+
+Task:
+useEffect(()=>{},[dependency])  - 24 Times to write 

@@ -1,0 +1,121 @@
+React:
+
+State :
+-> State is a Built-in React Object hold the data or information about the component.
+-> Memory of react 
+-> component data storage 
+-> data is updated over the time
+-> the component is re- render to reflect those changes.
+-> When state is changes the component re-render the component to store the data.
+
+State is class component 
+
+State Features 
+-> State is a mutable
+-> State triggers Re-render
+-> State is a asynchronous process 
+-> REact batches multiple state updates for performance
+-> State update take time to process
+-> Do not access Immediately 
+
+
+
+Important: State and setState Works in class component 
+
+Example:
+Syntax: 
+(this keyword)
+
+this.setState
+onClick ={}
+
+
+Hooks:
+Hooks is a Special functions in react, it perform for Memory, sideeffects then controls the component behaviour
+control the component using the datas and optimize the components.
+
+Hooks concept used within the function 
+
+1. useState - allows in functional component 
+
+
+    Syntax:
+    const [state, setState] = useState(initialValue)
+
+    Example:
+    const [state, setState] = useState(0) 
+
+    Explanation:
+    state - data or value 
+    setState - update function for data or value in the component
+
+2. useEffect
+3. useNavigator 
+
+
+
+
+
+
+
+
+
+Research and Read this topic
+Lexical scope (do not run within the function block (in react))
+Closure
+
+
+
+Tailwind CSS implementation
+
+
+
+
+
+
+
+
+Task: 
+1. Create a State with syntax 
+    6 string
+    4 number 
+    1 null value with 1 true & 1 false 
+    4 times array
+    3 Times object 
+    4 Array of object with image 
+
+    without button process 
+
+List of events & performs
+
+
+State - Main Important 
+I have a webpage
+I want datas
+call by using variable  
+
+Extension:
+simple react snippets
+es7+
+react CSS
+graphical UI           
+Tailwind CSS
+
+
+tailwind css import 
+step1
+    package.json path 
+        cmd  
+            npm i tailwindcss @tailwindcss/vite   or 
+            npm i -D tailwindcss @tailwindcss/vite 
+            Press Enter
+    
+    vite.config.js 
+        import tailwindcss from '@tailwindcss/vite'
+            react(), tailwindcss()
+
+
+index.css
+    @import 'tailwindcss'
+
+    <div className = 'bg-blue-600 h-100 flex justify-center items-center'></div> 

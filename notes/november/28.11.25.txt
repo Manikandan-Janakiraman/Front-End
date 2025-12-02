@@ -1,0 +1,92 @@
+Workbench:
+Collection of database is known as workbench.
+
+DDL 
+    -> Data Definition Language is only focussed on database, db structure, column all maintained by ddl commands 
+    -> You can use the Constraints 
+    -> DDL focussed on Database and table handling 
+
+Create | Alter | Drop | Truncate | Rename | Change 
+
+Database
+Collection of database know as GUI.
+Collection of tables to store the data like rows, columns.
+Collection of rows and columns known as tables.
+
+column name, database 
+
+default Delimiter - ;
+use command 
+
+
+Database -> Table -> column -> Rows 
+
+
+create table sladevelopers (
+    user id VARCHAR(20) UNIQUE,
+    id INT PRIMARY KEY auto_increment,
+    developer_name VARCHAR(50)
+    developer_email VARCHAR(50)
+    developer_age INT(50)
+    developer_mobile IN;
+    createdby VARCHAR(20) DEFAULT "ADMIN",
+    createdat DATETIME,
+    updatedby VARCHAR(20) DEFAULT "ROLE"
+    updateddat DATETIME
+);
+
+
+Foreign Key:
+
+CREATE TABLE Communication (
+id INT PRIMARY KEY AUTO_INCREMENT,
+Communication_user_id VARCHAR(20) UNIQUE,
+mark int,
+FOREIGN KEY (communicatio_user_id) REFERENCES sladevelopers(user_id)
+)
+
+
+
+Alter Process:
+
+ALTER TABLE sladevelopers ADD CONSTRAINT uq_developer_email UNIQUE(developer_age)
+
+ALTER TABLE aptitude ADD CONSTRAINT fk_aptitude
+FOREIGN KEY (aptitude_user_id) REFERENCES sladevelopers(user_id);
+
+RENAME TABLE aptitude TO aptitude_new;
+RENAME TABLE aptitude_new TO aptitude;
+
+ALTER TABLE aptitude RENAME TO aptitude_new 
+
+ALTER TABLE aptitude_new CHANGE COLUMN mark full_mark INT;
+ALTER TABLE aptitude_new MODIFY COLUMN full_mark VARCHAR(20);
+
+
+
+
+
+
+
+
+
+Explanation:
+int - integer
+Primary key - check the duplicates 
+VARCHAR - Variable Character (100)(20)(30)
+
+Foreign Key 
+FOREIGN KEY (communicatio_user_id) REFERENCES sladevelopers(user_id)
+
+
+create 
+table -
+tablename -
+(column name datatypes, Constraints, )
+
+
+
+TASK:
+Most important datatypes with Constraints
+What are all the Constraints in sql SQL
+Primary Key 

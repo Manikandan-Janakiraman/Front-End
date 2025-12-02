@@ -1,0 +1,93 @@
+Varaible not update in the screen not re-rendering
+
+Functional component:
+
+Hooks - > useState 
+
+
+const [tom, setTom] = useState()
+const [para, setPara] = useState()
+const [ticket, setTicket] = useState()
+const [app, setApp] = useState()
+
+const [tom, setTom] = useState(true)
+for re-rendering process or update process on the screen  
+
+
+Ternary operator: 
+5 state
+onclick: Image process
+onclick: on/process 
+onclick: text change
+onclick: box round triangle
+
+
+Numbering process
+Fibonacci series count 
+
+Onclick button automatically runs the numbers 
+
+Number, string, Ternary, optional, nullish, array, object, array of objects 
+
+Know about the State & Props 
+
+
+
+
+
+
+
+
+
+
+
+
+Create Phase
+CRA - Bundle webpack .js 
+VITE - ES6 pro level, speed process and efficient to develop the environment easily 
+
+    Vite:
+        Project Setup
+        package.json
+        src 
+        index.js
+        Main.jsx 
+        App.jsx 
+        components - folders 
+        Variable 
+        pages - folder 
+        declaration process 
+        tailwind css 
+
+        react-router-dom
+        link
+        navigation 
+        class component & Functional component
+
+State 
+    Hooks 
+    useState 
+
+Data Accessing (To show on the screen)
+
+Data Types:
+
+Primitive Data Types
+string, numbers, true, false, null, operator 
+
+Non Primite Data Tyes 
+    object, array of object, array, Function 
+
+
+useState 
+
+Function 
+
+Events:
+    onmouse, onclick, ondouble click, onsubmit, onchange, onmouseup, onmousedown 
+
+    onsubmit - use it in form only 
+
+
+from ES6 to latest ES16 features included in the react process 
+    

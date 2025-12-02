@@ -10,7 +10,7 @@ const App = ()=>{
     <>
     
      <div className="header">
-      <h1>Chennai IT Companies and Robotics</h1>
+      <h1>Southern Trio</h1>
     
      </div>
        <NavBar/>

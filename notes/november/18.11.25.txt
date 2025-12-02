@@ -1,0 +1,221 @@
+Rendering Process:
+
+Dynamic code -  Each code will convert into multiple places
+
+Server Side Rendering with ES6 Features:
+    > 
+
+
+Object Creation:
+
+method 1:
+const datas = {title:"", director:"", hero:""}
+const Crew = ()=>{
+    Console.log(datas);
+    return()
+}
+
+method 2:
+const Crew = ()=>{
+    const datas = {title:"", director:"", hero:""}
+    Console.log(datas);
+    return()
+}
+
+
+
+Rendering the String:
+
+-> Primitive & Non Primitive data types we can render into html section.
+-> First we see Primitive data types (String, boolean, null, number, symbol, BigInt)
+-> Non Primitive data (array, object, array of object, function)
+
+
+String:
+You can declare the String, we can access in your html section through the variable name 
+
+String Rendering:
+
+    const movie = "movie name"
+
+    Explanation:
+    Dynamic process in the inner html section {movie} and 
+    insert the const movie variable into before the return function 
+
+
+Number Rendering:
+
+    const year_process = 2016
+
+
+Template Literals:
+
+Concatenation ${}  
+Back tick ``
+single quote ''
+
+Ternary Operator (?):
+
+const on = true;
+const off = false;
+
+{on? <section>
+    <div>
+    <h3></h3>
+    <p></p>
+    </div>
+ </section> <p> There is no content</p> }
+ </section>:""}
+
+ "" Empty space for false condition
+
+Conditional Rendering:
+if Conditional is true or false it Conditional Rendering
+Conditional base Rendering the UI  
+
+Optional Rendering:
+IF left side value is true right side values showing
+IF left side value is false right side values not showing
+
+{off && <section>
+    <div>
+    <h3></h3>
+    <p></p>
+    </div>
+ </section> <p> There is no content</p> }
+ </section>:""}
+
+ "" Empty space for false condition 
+
+
+
+Nullish coalescing:
+The ?? operator: It checks the value on its left.  
+If the left value is null or undefined: The operator returns the value on the right.  
+If the left value is not null or undefined: The operator returns the left value, even if it's a falsy value like \(0\) or false. 
+
+
+{off ?? <section>
+    <div>
+    <h3></h3>
+    <p></p>
+    </div>
+ </section> <p> There is no content</p> }
+ </section>:""}
+
+ "" Empty space for false condition 
+
+
+Ternary                         optional                                            Nullish
+true ->             lefside true -> right side show              lefside null or undefined -> right side show 
+false ->                                                         leftside has value - > right side value show
+
+
+
+
+
+Non Primitive Data Types:
+
+Array:
+
+
+
+Object Rendering:
+
+const datas = {title:"", director:"", hero:""}
+
+<h1>{data.title}</>
+<h1>{data.name}</>
+
+
+
+Array of Object:
+
+[{title:"name", time:"2pm to 5pm}] 
+
+
+Hierarchial order 
+Mapping
+                        
+{movieTicketDetails.map((e,i)=>(
+
+))
+}
+
+
+
+
+
+Function:
+
+
+
+
+
+
+Important Topics (Interview):
+Object Rendering
+Condition Rendering
+Optional Rendering
+Dot Notation
+Nullish
+Ternary
+
+
+
+Expression : var a = 10; Value assigned the given variable 
+Statement: unit of execution 
+
+
+
+Command Prompt:
+Project creation another method:
+npm create vite@latest
+
+npx
+create-vite 
+
+Project name:
+reactproject 
+
+
+
+Implicit(system declare)
+Explicit (user declare) 
+
+
+
+Notes:
+<> </>  - Fragment Tag
+
+
+
+Component :
+String Rendering Component:
+    Banner with text
+Number Rendering Component:
+     Generate Dynamic 2 tables  (1x2) (2x2)
+Boolean:
+    Ternary Operator  - value true means image show, value false means text show
+    Nullish  - null means show right side or value means right side text 
+    Optional - true means show content 
+Template Literals:
+Object:
+    Make Cards Dynamic  
+Array of objects:
+    Make cards Dynamic 
+
+12 Times 
+Mapping Function
+
+
+
+
+
+npm commands:
+press r + enter to restart the Server
+press u + enter to show the server url
+press o + enter to open the Server
+press c + enter to clear Console
+press q + enter to quit 
+press h + enter to show help

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.photography {
+  background-color: black;
+}
+
+.brand {
+  background-color: rgb(19, 81, 105);
+  color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding:20px;
+
+}
+
+.flight{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  height: 50vh;
+  background-color: azure;
+}
+
+.container img {
+  width:100%;
+}
+
+.content h1,p {
+  text-align: center;
+}
+
+.card {
+  background-color: skyblue;
+  height: 70vh;
+}
+
+.cardchild-1 {
+  width:300px;
+  height:100px;
+  background-color: aliceblue;
+  padding:50px;
+}

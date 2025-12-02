@@ -5,8 +5,9 @@ export const NavBar = () => {
                 <nav>
                     <div className="container">
                         <div className="navbar">
-                            <a>IT Companies </a>
-                            <a>Robotics</a>
+                            <a>Chennai </a>
+                            <a>Kerala</a>
+                            <a>Karnataka</a>
                         </div>
                     </div>
 
