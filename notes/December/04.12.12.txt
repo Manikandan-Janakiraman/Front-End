@@ -1,0 +1,121 @@
+DML -> Insert, update and delete 
+        insert (no where method)
+        function aggregate and string date number - values
+
+DQL 
+Select - Fetch the datas for the table
+        where, group, having, sort (ascending, descending)
+        limit
+        district 
+
+Database structuremaking and table structure making
+
+Normalization - 1,2,3
+        Tables maintained, column maintained 
+        user datas - id, name, 
+
+
+Joins and Sub queries and Triggers
+
+Subquery
+    Sub query is a query inside another query it runs first, produce a value/table, and the outer query uses that result.
+    To compare the value with the calculate result to filter rows based on another table 
+    To replace joins in small cases 
+    To find dynamic values 
+    To check existence of related data  
+    Helps as to make query smart and more flexible 
+
+    You need a calculate values
+
+Scalar Subquery:
+    Returns one value 
+    used in where and select condition 
+
+    select * from tablename where salary > (select product_price from products)
+    select * from tablename where salary = (select product_price from products)
+    select * from tablename where salary < (select product_price from products)
+
+Inner query 
+    Returns single value 
+
+Column Subquery
+    Column Subquery Returns one column multiple rows 
+
+    in, or, not in 
+
+    select emp_depart from emp;
+    select emp_name from emp where emp_depart in (select emp_depart from emp)
+
+Row Subquery
+    Returns one rows 
+
+    select emp_depart, max(emp_salary) from emp;
+    select * from emp where (emp,depart, emp_salary) = ()
+
+Table Subquery
+    where 
+    having 
+    select * from tablename 
+    select emp_name
+
+
+
+
+
+
+    select * from tablename where salary > 10000
+
+    
+
+
+
+Advanced Concepts: 
+TCL - Transaction Control Language
+DCL - Data Control Language
+
+
+
+
+
+Important Topics in SQL 
+
+DDL - Database Creation, Table Creation - Data Types 
+        Constraints, Primary Key, Foreign Key, Commands (ADD, CHANGE, RENAME, CREATE, ALTER, MODIFY) 
+
+        10 Task - Normalization Method Table Creation 
+
+        Truncate & Drop
+
+DML
+    Commands (INSERT, DELETE, update, ON)
+    Data Insert 
+    Data Type 
+    Insert Query  (do not use where condition)
+    Update Where condition - Delete, safe update and delete always on
+
+        10 Task - Data handling
+
+    Built in function (String, function, aggregate, number, date) used in values only insert and update commands.
+
+
+DQL 
+
+    Commands 
+    SELECT QUERY (WITH SINGLE DATA TAKE, MULTI DATA ROWS)
+    WHERE - Select  - 5 Nos 
+    GROUP BY  - 2 Nos 
+    HAVING  - 5 Nos 
+    LIMIT - 2 Nos 
+    ORDER - 2 Nos 
+    DISTINCT - 2 Nos 
+
+Joins  - inner, left, right, cross join, full outer, Self Join 
+            Commands 
+
+Sub queries - Single, Column, Row, Table 
+
+TCL & DCL  - Theory & Commands 
+
+Triggers - Single Statement query, multiple Statement Query 
+            (Insert, update, delete - triggers 2 or more tables)
+
