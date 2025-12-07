@@ -1,0 +1,18 @@
+{
+"name": "pdf-to-audio",
+"version": "0.1.0",
+"private": true,
+"dependencies": {
+"pdfjs-dist": "^3.9.179",
+"react": "^18.2.0",
+"react-dom": "^18.2.0"
+},
+"devDependencies": {
+"vite": "^5.0.0"
+},
+"scripts": {
+"dev": "vite",
+"build": "vite build",
+"preview": "vite preview"
+}
+}

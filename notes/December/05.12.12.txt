@@ -1,0 +1,53 @@
+Triggers:
+
+
+What is triggers?
+-> A trigger is block of sql code that automatically executes when insert, update or delete happen on a table.
+
+
+Why we use?
+-> Security purpose
+-> Backup
+-> Auditing
+-> prevent for invalid operations
+-> enforce business rules
+
+
+Types:
+Before and After 
+
+
+
+When we use?
+Based on action 
+Insert, Update, Delete 
+
+
+
+
+CMDS  - 6 commands 
+CREATE, BEFORE, AFTER, TRIGGER, INSERT, UPDATE, DELETE, FOR, EACH ROW, SET 
+
+Property
+new, old 
+
+Single Line Triggers
+Multi Line Triggers 
+
+Default Delimiter - ;
+;
+
+Delimiter will change to any special characters &&, ##%, &%.
+Multi Line code execution 
+
+
+
+
+Practical process:
+
+6 Triggers Types
+Event - Insert, update, delete 
+Before - Before Insert, update, delete 
+AFter - After Insert, update, delete 
+
+BEFORE - VALIDATE OR MODIFY THE DATA - Delimiter 
